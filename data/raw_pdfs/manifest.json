@@ -1,0 +1,1179 @@
+[
+  {
+    "arxiv_id": "2406.14220v2",
+    "title": "Evaluation of Deep Learning Semantic Segmentation for Land Cover Mapping on Multispectral, Hyperspectral and High Spatial Aerial Imagery",
+    "summary": "In the rise of climate change, land cover mapping has become such an urgent need in environmental monitoring. The accuracy of land cover classification has gotten increasingly based on the improvement of remote sensing data. Land cover classification using satellite imageries has been explored and become more prevalent in recent years, but the methodologies remain some drawbacks of subjective and time-consuming. Some deep learning techniques have been utilized to overcome these limitations. However, most studies implemented just one image type to evaluate algorithms for land cover mapping. Therefore, our study conducted deep learning semantic segmentation in multispectral, hyperspectral, and high spatial aerial image datasets for landcover mapping. This research implemented a semantic segmentation method such as Unet, Linknet, FPN, and PSPnet for categorizing vegetation, water, and others (i.e., soil and impervious surface). The LinkNet model obtained high accuracy in IoU (Intersection Over Union) at 0.92 in all datasets, which is comparable with other mentioned techniques. In evaluation with different image types, the multispectral images showed higher performance with the IoU, and F1-score are 0.993 and 0.997, respectively. Our outcome highlighted the efficiency and broad applicability of LinkNet and multispectral image on land cover classification. This research contributes to establishing an approach on landcover segmentation via open source for long-term future application.",
+    "authors": [
+      "Ilham Adi Panuntun",
+      "Ying-Nong Chen",
+      "Ilham Jamaluddin",
+      "Thi Linh Chi Tran"
+    ],
+    "published": "2024-06-20T11:40:12Z",
+    "pdf_url": "https://arxiv.org/pdf/2406.14220v2",
+    "local_path": "data\\raw_pdfs\\2406.14220v2.pdf"
+  },
+  {
+    "arxiv_id": "2207.08051v3",
+    "title": "SatMAE: Pre-training Transformers for Temporal and Multi-Spectral Satellite Imagery",
+    "summary": "Unsupervised pre-training methods for large vision models have shown to enhance performance on downstream supervised tasks. Developing similar techniques for satellite imagery presents significant opportunities as unlabelled data is plentiful and the inherent temporal and multi-spectral structure provides avenues to further improve existing pre-training strategies. In this paper, we present SatMAE, a pre-training framework for temporal or multi-spectral satellite imagery based on Masked Autoencoder (MAE). To leverage temporal information, we include a temporal embedding along with independently masking image patches across time. In addition, we demonstrate that encoding multi-spectral data as groups of bands with distinct spectral positional encodings is beneficial. Our approach yields strong improvements over previous state-of-the-art techniques, both in terms of supervised learning performance on benchmark datasets (up to $\\uparrow$ 7%), and transfer learning performance on downstream remote sensing tasks, including land cover classification (up to $\\uparrow$ 14%) and semantic segmentation. Code and data are available on the project website: https://sustainlab-group.github.io/SatMAE/",
+    "authors": [
+      "Yezhen Cong",
+      "Samar Khanna",
+      "Chenlin Meng",
+      "Patrick Liu",
+      "Erik Rozi",
+      "Yutong He",
+      "Marshall Burke",
+      "David B. Lobell",
+      "Stefano Ermon"
+    ],
+    "published": "2022-07-17T01:35:29Z",
+    "pdf_url": "https://arxiv.org/pdf/2207.08051v3",
+    "local_path": "data\\raw_pdfs\\2207.08051v3.pdf"
+  },
+  {
+    "arxiv_id": "2503.23844v1",
+    "title": "FlexiMo: A Flexible Remote Sensing Foundation Model",
+    "summary": "The rapid expansion of multi-source satellite imagery drives innovation in Earth observation, opening unprecedented opportunities for Remote Sensing Foundation Models to harness diverse data. However, many existing models remain constrained by fixed spatial resolutions and patch sizes, limiting their ability to fully exploit the heterogeneous spatial characteristics inherent in satellite imagery. To address these challenges, we propose FlexiMo, a flexible remote sensing foundation model that endows the pre-trained model with the flexibility to adapt to arbitrary spatial resolutions. Central to FlexiMo is a spatial resolution-aware module that employs a parameter-free alignment embedding mechanism to dynamically recalibrate patch embeddings based on the input image's resolution and dimensions. This design not only preserves critical token characteristics and ensures multi-scale feature fidelity but also enables efficient feature extraction without requiring modifications to the underlying network architecture. In addition, FlexiMo incorporates a lightweight channel adaptation module that leverages prior spectral information from sensors. This mechanism allows the model to process images with varying numbers of channels while maintaining the data's intrinsic physical properties. Extensive experiments on diverse multimodal, multi-resolution, and multi-scale datasets demonstrate that FlexiMo significantly enhances model generalization and robustness. In particular, our method achieves outstanding performance across a range of downstream tasks, including scene classification, land cover classification, urban building segmentation, and cloud detection. By enabling parameter-efficient and physically consistent adaptation, FlexiMo paves the way for more adaptable and effective foundation models in real-world remote sensing applications.",
+    "authors": [
+      "Xuyang Li",
+      "Chenyu Li",
+      "Pedram Ghamisi",
+      "Danfeng Hong"
+    ],
+    "published": "2025-03-31T08:46:05Z",
+    "pdf_url": "https://arxiv.org/pdf/2503.23844v1",
+    "local_path": "data\\raw_pdfs\\2503.23844v1.pdf"
+  },
+  {
+    "arxiv_id": "1806.00901v1",
+    "title": "Large-scale Land Cover Classification in GaoFen-2 Satellite Imagery",
+    "summary": "Many significant applications need land cover information of remote sensing images that are acquired from different areas and times, such as change detection and disaster monitoring. However, it is difficult to find a generic land cover classification scheme for different remote sensing images due to the spectral shift caused by diverse acquisition condition. In this paper, we develop a novel land cover classification method that can deal with large-scale data captured from widely distributed areas and different times. Additionally, we establish a large-scale land cover classification dataset consisting of 150 Gaofen-2 imageries as data support for model training and performance evaluation. Our experiments achieve outstanding classification accuracy compared with traditional methods.",
+    "authors": [
+      "Xin-Yi Tong",
+      "Qikai Lu",
+      "Gui-Song Xia",
+      "Liangpei Zhang"
+    ],
+    "published": "2018-06-04T00:12:00Z",
+    "pdf_url": "https://arxiv.org/pdf/1806.00901v1",
+    "local_path": "data\\raw_pdfs\\1806.00901v1.pdf"
+  },
+  {
+    "arxiv_id": "2111.08872v4",
+    "title": "TorchGeo: Deep Learning With Geospatial Data",
+    "summary": "Remotely sensed geospatial data are critical for applications including precision agriculture, urban planning, disaster monitoring and response, and climate change research, among others. Deep learning methods are particularly promising for modeling many remote sensing tasks given the success of deep neural networks in similar computer vision tasks and the sheer volume of remotely sensed imagery available. However, the variance in data collection methods and handling of geospatial metadata make the application of deep learning methodology to remotely sensed data nontrivial. For example, satellite imagery often includes additional spectral bands beyond red, green, and blue and must be joined to other geospatial data sources that can have differing coordinate systems, bounds, and resolutions. To help realize the potential of deep learning for remote sensing applications, we introduce TorchGeo, a Python library for integrating geospatial data into the PyTorch deep learning ecosystem. TorchGeo provides data loaders for a variety of benchmark datasets, composable datasets for generic geospatial data sources, samplers for geospatial data, and transforms that work with multispectral imagery. TorchGeo is also the first library to provide pre-trained models for multispectral satellite imagery (e.g., models that use all bands from the Sentinel-2 satellites), allowing for advances in transfer learning on downstream remote sensing tasks with limited labeled data. We use TorchGeo to create reproducible benchmark results on existing datasets and benchmark our proposed method for preprocessing geospatial imagery on the fly. TorchGeo is open source and available on GitHub: https://github.com/microsoft/torchgeo.",
+    "authors": [
+      "Adam J. Stewart",
+      "Caleb Robinson",
+      "Isaac A. Corley",
+      "Anthony Ortiz",
+      "Juan M. Lavista Ferres",
+      "Arindam Banerjee"
+    ],
+    "published": "2021-11-17T02:47:33Z",
+    "pdf_url": "https://arxiv.org/pdf/2111.08872v4",
+    "local_path": "data\\raw_pdfs\\2111.08872v4.pdf"
+  },
+  {
+    "arxiv_id": "2012.04222v1",
+    "title": "Scale Aware Adaptation for Land-Cover Classification in Remote Sensing Imagery",
+    "summary": "Land-cover classification using remote sensing imagery is an important Earth observation task. Recently, land cover classification has benefited from the development of fully connected neural networks for semantic segmentation. The benchmark datasets available for training deep segmentation models in remote sensing imagery tend to be small, however, often consisting of only a handful of images from a single location with a single scale. This limits the models' ability to generalize to other datasets. Domain adaptation has been proposed to improve the models' generalization but we find these approaches are not effective for dealing with the scale variation commonly found between remote sensing image collections. We therefore propose a scale aware adversarial learning framework to perform joint cross-location and cross-scale land-cover classification. The framework has a dual discriminator architecture with a standard feature discriminator as well as a novel scale discriminator. We also introduce a scale attention module which produces scale-enhanced features. Experimental results show that the proposed framework outperforms state-of-the-art domain adaptation methods by a large margin.",
+    "authors": [
+      "Xueqing Deng",
+      "Yi Zhu",
+      "Yuxin Tian",
+      "Shawn Newsam"
+    ],
+    "published": "2020-12-08T05:15:43Z",
+    "pdf_url": "https://arxiv.org/pdf/2012.04222v1",
+    "local_path": "data\\raw_pdfs\\2012.04222v1.pdf"
+  },
+  {
+    "arxiv_id": "2601.07975v1",
+    "title": "An Efficient Additive Kolmogorov-Arnold Transformer for Point-Level Maize Localization in Unmanned Aerial Vehicle Imagery",
+    "summary": "High-resolution UAV photogrammetry has become a key technology for precision agriculture, enabling centimeter-level crop monitoring and point-level plant localization. However, point-level maize localization in UAV imagery remains challenging due to (1) extremely small object-to-pixel ratios, typically less than 0.1%, (2) prohibitive computational costs of quadratic attention on ultra-high-resolution images larger than 3000 x 4000 pixels, and (3) agricultural scene-specific complexities such as sparse object distribution and environmental variability that are poorly handled by general-purpose vision models.   To address these challenges, we propose the Additive Kolmogorov-Arnold Transformer (AKT), which replaces conventional multilayer perceptrons with Pade Kolmogorov-Arnold Network (PKAN) modules to enhance functional expressivity for small-object feature extraction, and introduces PKAN Additive Attention (PAA) to model multiscale spatial dependencies with reduced computational complexity. In addition, we present the Point-based Maize Localization (PML) dataset, consisting of 1,928 high-resolution UAV images with approximately 501,000 point annotations collected under real field conditions.   Extensive experiments show that AKT achieves an average F1-score of 62.8%, outperforming state-of-the-art methods by 4.2%, while reducing FLOPs by 12.6% and improving inference throughput by 20.7%. For downstream tasks, AKT attains a mean absolute error of 7.1 in stand counting and a root mean square error of 1.95-1.97 cm in interplant spacing estimation. These results demonstrate that integrating Kolmogorov-Arnold representation theory with efficient attention mechanisms offers an effective framework for high-resolution agricultural remote sensing.",
+    "authors": [
+      "Fei Li",
+      "Lang Qiao",
+      "Jiahao Fan",
+      "Yijia Xu",
+      "Shawn M. Kaeppler",
+      "Zhou Zhang"
+    ],
+    "published": "2026-01-12T20:16:10Z",
+    "pdf_url": "https://arxiv.org/pdf/2601.07975v1",
+    "local_path": "data\\raw_pdfs\\2601.07975v1.pdf"
+  },
+  {
+    "arxiv_id": "2607.23024v1",
+    "title": "When Less Is More: A Controlled Benchmark of Lightweight CNNs for Satellite Land-Cover Segmentation on DeepGlobe",
+    "summary": "High-resolution satellite imagery is the backbone of good land-cover classification, and without that, environmental monitoring, urban planning, and sustainable resource management all fall short. Deep learning architectures perform well in semantic segmentation, but the efficiency-accuracy trade-off across classical convolutional encoders is not well quantified under controlled, reproducible conditions. This study compares five architectures VGG16, MobileNetV2, InceptionV3, AlexNet, and CNN on the DeepGlobe Land Cover Classification dataset using three progressively optimized iterations to isolate regularisation, transfer learning, and architectural depth. To ensure performance differentials reflect architectural properties, all experiments used identical preprocessing, hyperparameter, and training protocols without data augmentation or class-imbalance correction. At 24.98 MB, MobileNetV2_v1 had the highest overall accuracy (0.7906) and mean Intersection over Union (0.4625), outperforming deeper alternatives like InceptionV3_v2 (125.17 MB, accuracy 0.7610) and VGG16_v2 (71.13 MB, accuracy 0.7653). Class-wise analysis showed strength in urban, agricultural, and water categories, but rangeland-barren confusion showed that architectural optimization alone cannot optimize spectrally similar minority classes. Strong spatial generalization and crisp boundary delineation were confirmed on held-out test imagery, validating operational applicability. These results show that lightweight, transfer-learned models can match or outperform deeper models in resource-constrained remote-sensing environments, enabling scalable land-cover mapping.",
+    "authors": [
+      "Atiq Ur Rehman",
+      "Joseph Michael Donovan"
+    ],
+    "published": "2026-07-25T03:51:49Z",
+    "pdf_url": "https://arxiv.org/pdf/2607.23024v1",
+    "local_path": "data\\raw_pdfs\\2607.23024v1.pdf"
+  },
+  {
+    "arxiv_id": "2012.03111v1",
+    "title": "LandCoverNet: A global benchmark land cover classification training dataset",
+    "summary": "Regularly updated and accurate land cover maps are essential for monitoring 14 of the 17 Sustainable Development Goals. Multispectral satellite imagery provide high-quality and valuable information at global scale that can be used to develop land cover classification models. However, such a global application requires a geographically diverse training dataset. Here, we present LandCoverNet, a global training dataset for land cover classification based on Sentinel-2 observations at 10m spatial resolution. Land cover class labels are defined based on annual time-series of Sentinel-2, and verified by consensus among three human annotators.",
+    "authors": [
+      "Hamed Alemohammad",
+      "Kevin Booth"
+    ],
+    "published": "2020-12-05T19:48:57Z",
+    "pdf_url": "https://arxiv.org/pdf/2012.03111v1",
+    "local_path": "data\\raw_pdfs\\2012.03111v1.pdf"
+  },
+  {
+    "arxiv_id": "2006.12119v1",
+    "title": "The color out of space: learning self-supervised representations for Earth Observation imagery",
+    "summary": "The recent growth in the number of satellite images fosters the development of effective deep-learning techniques for Remote Sensing (RS). However, their full potential is untapped due to the lack of large annotated datasets. Such a problem is usually countered by fine-tuning a feature extractor that is previously trained on the ImageNet dataset. Unfortunately, the domain of natural images differs from the RS one, which hinders the final performance. In this work, we propose to learn meaningful representations from satellite imagery, leveraging its high-dimensionality spectral bands to reconstruct the visible colors. We conduct experiments on land cover classification (BigEarthNet) and West Nile Virus detection, showing that colorization is a solid pretext task for training a feature extractor. Furthermore, we qualitatively observe that guesses based on natural images and colorization rely on different parts of the input. This paves the way to an ensemble model that eventually outperforms both the above-mentioned techniques.",
+    "authors": [
+      "Stefano Vincenzi",
+      "Angelo Porrello",
+      "Pietro Buzzega",
+      "Marco Cipriano",
+      "Pietro Fronte",
+      "Roberto Cuccu",
+      "Carla Ippoliti",
+      "Annamaria Conte",
+      "Simone Calderara"
+    ],
+    "published": "2020-06-22T10:21:36Z",
+    "pdf_url": "https://arxiv.org/pdf/2006.12119v1",
+    "local_path": "data\\raw_pdfs\\2006.12119v1.pdf"
+  },
+  {
+    "arxiv_id": "2012.03093v1",
+    "title": "Semantic Segmentation of Medium-Resolution Satellite Imagery using Conditional Generative Adversarial Networks",
+    "summary": "Semantic segmentation of satellite imagery is a common approach to identify patterns and detect changes around the planet. Most of the state-of-the-art semantic segmentation models are trained in a fully supervised way using Convolutional Neural Network (CNN). The generalization property of CNN is poor for satellite imagery because the data can be very diverse in terms of landscape types, image resolutions, and scarcity of labels for different geographies and seasons. Hence, the performance of CNN doesn't translate well to images from unseen regions or seasons. Inspired by Conditional Generative Adversarial Networks (CGAN) based approach of image-to-image translation for high-resolution satellite imagery, we propose a CGAN framework for land cover classification using medium-resolution Sentinel-2 imagery. We find that the CGAN model outperforms the CNN model of similar complexity by a significant margin on an unseen imbalanced test dataset.",
+    "authors": [
+      "Aditya Kulkarni",
+      "Tharun Mohandoss",
+      "Daniel Northrup",
+      "Ernest Mwebaze",
+      "Hamed Alemohammad"
+    ],
+    "published": "2020-12-05T18:18:45Z",
+    "pdf_url": "https://arxiv.org/pdf/2012.03093v1",
+    "local_path": "data\\raw_pdfs\\2012.03093v1.pdf"
+  },
+  {
+    "arxiv_id": "2607.11366v1",
+    "title": "Self-supervised training for high-resolution close-range multispectral remote sensing imagery",
+    "summary": "Although self-supervised learning (SSL) offers a promising way to reduce annotation effort in close-range remote sensing, its effectiveness for high-resolution multispectral unmanned aerial vehicle (UAV) imagery remains underexplored due to limited data. This study evaluated SSL pretraining for precision agriculture using cm-scale multispectral drone imagery collected across multiple sensors, years, and regions. Transformer-based encoders were pretrained with Momentum Contrast v3 (MoCo-v3) and Masked Autoencoders on a harmonized dataset combining msuav500K with newly collected multi-year UAV imagery from agricultural fields in Finland. Pretraining used four spectral bands (Green, Red, Red-Edge, Near-Infrared) for cross-sensor compatibility. The models were evaluated on crop-weed semantic segmentation using the WeedMap dataset with 5--100% training data. The following two subsets served as downstream tasks: Task A (Germany, RedEdge-M), where all pretrained models were compared under partial and full fine-tuning, and Task B (Switzerland, Sequoia), where the best encoder from Task A was assessed. Our Swin Transformer pretrained with MoCo-v3 achieved the strongest performance on both tasks, surpassing the Swin Transformer model of Doornbos et al. pretrained on a pre-release of msuav500K. Our pretrained Swin Transformer further demonstrated cross-sensor and cross-region generalization. We additionally provide a public multi-year multispectral UAV dataset from Finland to support future research.",
+    "authors": [
+      "Leon-Friedrich Thomas",
+      "Mikael \u00c4n\u00e4kk\u00e4l\u00e4",
+      "Antti Lajunen"
+    ],
+    "published": "2026-07-13T10:31:35Z",
+    "pdf_url": "https://arxiv.org/pdf/2607.11366v1",
+    "local_path": "data\\raw_pdfs\\2607.11366v1.pdf"
+  },
+  {
+    "arxiv_id": "2205.05369v1",
+    "title": "AutoLC: Search Lightweight and Top-Performing Architecture for Remote Sensing Image Land-Cover Classification",
+    "summary": "Land-cover classification has long been a hot and difficult challenge in remote sensing community. With massive High-resolution Remote Sensing (HRS) images available, manually and automatically designed Convolutional Neural Networks (CNNs) have already shown their great latent capacity on HRS land-cover classification in recent years. Especially, the former can achieve better performance while the latter is able to generate lightweight architecture. Unfortunately, they both have shortcomings. On the one hand, because manual CNNs are almost proposed for natural image processing, it becomes very redundant and inefficient to process HRS images. On the other hand, nascent Neural Architecture Search (NAS) techniques for dense prediction tasks are mainly based on encoder-decoder architecture, and just focus on the automatic design of the encoder, which makes it still difficult to recover the refined mapping when confronting complicated HRS scenes.   To overcome their defects and tackle the HRS land-cover classification problems better, we propose AutoLC which combines the advantages of two methods. First, we devise a hierarchical search space and gain the lightweight encoder underlying gradient-based search strategy. Second, we meticulously design a lightweight but top-performing decoder that is adaptive to the searched encoder of itself. Finally, experimental results on the LoveDA land-cover dataset demonstrate that our AutoLC method outperforms the state-of-art manual and automatic methods with much less computational consumption.",
+    "authors": [
+      "Chenyu Zheng",
+      "Junjue Wang",
+      "Ailong Ma",
+      "Yanfei Zhong"
+    ],
+    "published": "2022-05-11T09:30:36Z",
+    "pdf_url": "https://arxiv.org/pdf/2205.05369v1",
+    "local_path": "data\\raw_pdfs\\2205.05369v1.pdf"
+  },
+  {
+    "arxiv_id": "2007.10891v1",
+    "title": "Representative-Discriminative Learning for Open-set Land Cover Classification of Satellite Imagery",
+    "summary": "Land cover classification of satellite imagery is an important step toward analyzing the Earth's surface. Existing models assume a closed-set setting where both the training and testing classes belong to the same label set. However, due to the unique characteristics of satellite imagery with an extremely vast area of versatile cover materials, the training data are bound to be non-representative. In this paper, we study the problem of open-set land cover classification that identifies the samples belonging to unknown classes during testing, while maintaining performance on known classes. Although inherently a classification problem, both representative and discriminative aspects of data need to be exploited in order to better distinguish unknown classes from known. We propose a representative-discriminative open-set recognition (RDOSR) framework, which 1) projects data from the raw image space to the embedding feature space that facilitates differentiating similar classes, and further 2) enhances both the representative and discriminative capacity through transformation to a so-called abundance space. Experiments on multiple satellite benchmarks demonstrate the effectiveness of the proposed method. We also show the generality of the proposed approach by achieving promising results on open-set classification tasks using RGB images.",
+    "authors": [
+      "Razieh Kaviani Baghbaderani",
+      "Ying Qu",
+      "Hairong Qi",
+      "Craig Stutts"
+    ],
+    "published": "2020-07-21T15:28:56Z",
+    "pdf_url": "https://arxiv.org/pdf/2007.10891v1",
+    "local_path": "data\\raw_pdfs\\2007.10891v1.pdf"
+  },
+  {
+    "arxiv_id": "2504.19996v2",
+    "title": "Monitoring digestate application on agricultural crops using Sentinel-2 Satellite imagery",
+    "summary": "The widespread use of Exogenous Organic Matter in agriculture necessitates monitoring to assess its effects on soil and crop health. This study evaluates optical Sentinel-2 satellite imagery for detecting digestate application, a practice that enhances soil fertility but poses environmental risks like microplastic contamination and nitrogen losses. In the first instance, Sentinel-2 satellite image time series (SITS) analysis of specific indices (EOMI, NDVI, EVI) was used to characterize EOM's spectral behavior after application on the soils of four different crop types in Thessaly, Greece. Furthermore, Machine Learning (ML) models (namely Random Forest, k-NN, Gradient Boosting and a Feed-Forward Neural Network), were used to investigate digestate presence detection, achieving F1-scores up to 0.85. The findings highlight the potential of combining remote sensing and ML for scalable and cost-effective monitoring of EOM applications, supporting precision agriculture and sustainability.",
+    "authors": [
+      "Andreas Kalogeras",
+      "Dimitrios Bormpoudakis",
+      "Iason Tsardanidis",
+      "Dimitra A. Loka",
+      "Charalampos Kontoes"
+    ],
+    "published": "2025-04-28T17:16:40Z",
+    "pdf_url": "https://arxiv.org/pdf/2504.19996v2",
+    "local_path": "data\\raw_pdfs\\2504.19996v2.pdf"
+  },
+  {
+    "arxiv_id": "2006.00234v2",
+    "title": "Integrating global spatial features in CNN based Hyperspectral/SAR imagery classification",
+    "summary": "The land cover classification has played an important role in remote sensing because it can intelligently identify things in one huge remote sensing image to reduce the work of humans. However, a lot of classification methods are designed based on the pixel feature or limited spatial feature of the remote sensing image, which limits the classification accuracy and universality of their methods. This paper proposed a novel method to take into the information of remote sensing image, i.e., geographic latitude-longitude information. In addition, a dual-branch convolutional neural network (CNN) classification method is designed in combination with the global information to mine the pixel features of the image. Then, the features of the two neural networks are fused with another fully neural network to realize the classification of remote sensing images. Finally, two remote sensing images are used to verify the effectiveness of our method, including hyperspectral imaging (HSI) and polarimetric synthetic aperture radar (PolSAR) imagery. The result of the proposed method is superior to the traditional single-channel convolutional neural network.",
+    "authors": [
+      "Fan Zhang",
+      "MinChao Yan",
+      "Chen Hu",
+      "Jun Ni",
+      "Fei Ma"
+    ],
+    "published": "2020-05-30T10:00:10Z",
+    "pdf_url": "https://arxiv.org/pdf/2006.00234v2",
+    "local_path": "data\\raw_pdfs\\2006.00234v2.pdf"
+  },
+  {
+    "arxiv_id": "2203.11447v1",
+    "title": "Manipulating UAV Imagery for Satellite Model Training, Calibration and Testing",
+    "summary": "Modern livestock farming is increasingly data driven and frequently relies on efficient remote sensing to gather data over wide areas. High resolution satellite imagery is one such data source, which is becoming more accessible for farmers as coverage increases and cost falls. Such images can be used to detect and track animals, monitor pasture changes, and understand land use. Many of the data driven models being applied to these tasks require ground truthing at resolutions higher than satellites can provide. Simultaneously, there is a lack of available aerial imagery focused on farmland changes that occur over days or weeks, such as herd movement. With this goal in mind, we present a new multi-temporal dataset of high resolution UAV imagery which is artificially degraded to match satellite data quality. An empirical blurring metric is used to calibrate the degradation process against actual satellite imagery of the area. UAV surveys were flown repeatedly over several weeks, for specific farm locations. This 5cm/pixel data is sufficiently high resolution to accurately ground truth cattle locations, and other factors such as grass cover. From 33 wide area UAV surveys, 1869 patches were extracted and artificially degraded using an accurate satellite optical model to simulate satellite data. Geographic patches from multiple time periods are aligned and presented as sets, providing a multi-temporal dataset that can be used for detecting changes on farms. The geo-referenced images and 27,853 manually annotated cattle labels are made publicly available.",
+    "authors": [
+      "Jasper Brown",
+      "Cameron Clark",
+      "Sabrina Lomax",
+      "Khalid Rafique",
+      "Salah Sukkarieh"
+    ],
+    "published": "2022-03-22T03:57:02Z",
+    "pdf_url": "https://arxiv.org/pdf/2203.11447v1",
+    "local_path": "data\\raw_pdfs\\2203.11447v1.pdf"
+  },
+  {
+    "arxiv_id": "2205.05047v2",
+    "title": "Classification and mapping of low-statured 'shrubland' cover types in post-agricultural landscapes of the US Northeast",
+    "summary": "Novel plant communities reshape landscapes and pose challenges for land cover classification and mapping that can constrain research and stewardship efforts. In the US Northeast, emergence of low-statured woody vegetation, or shrublands, instead of secondary forests in post-agricultural landscapes is well-documented by field studies, but poorly understood from a landscape perspective, which limits the ability to systematically study and manage these lands. To address gaps in classification/mapping of low-statured cover types where they have been historically rare, we developed models to predict shrubland distributions at 30m resolution across New York State (NYS), using a stacked ensemble combining a random forest, gradient boosting machine, and artificial neural network to integrate remote sensing of structural (airborne LIDAR) and optical (satellite imagery) properties of vegetation cover. We first classified a 1m canopy height model (CHM), derived from a patchwork of available LIDAR coverages, to define shrubland presence/absence. Next, these non-contiguous maps were used to train a model ensemble based on temporally-segmented imagery to predict shrubland probability for the entire study landscape (NYS). Approximately 2.5% of the CHM coverage area was classified as shrubland. Models using Landsat predictors trained on the classified CHM were effective at identifying shrubland (test set AUC=0.893, real-world AUC=0.904), in discriminating between shrub/young forest and other cover classes, and produced qualitatively sensible maps, even when extending beyond the original training data. Our results suggest that incorporation of airborne LiDAR, even from a discontinuous patchwork of coverages, can improve land cover classification of historically rare but increasingly prevalent shrubland habitats across broader areas.",
+    "authors": [
+      "Michael J Mahoney",
+      "Lucas K Johnson",
+      "Abigail Z Guinan",
+      "Colin M Beier"
+    ],
+    "published": "2022-05-09T14:54:41Z",
+    "pdf_url": "https://arxiv.org/pdf/2205.05047v2",
+    "local_path": "data\\raw_pdfs\\2205.05047v2.pdf"
+  },
+  {
+    "arxiv_id": "2602.13350v1",
+    "title": "Detecting Brick Kiln Infrastructure at Scale: Graph, Foundation, and Remote Sensing Models for Satellite Imagery Data",
+    "summary": "Brick kilns are a major source of air pollution and forced labor in South Asia, yet large-scale monitoring remains limited by sparse and outdated ground data. We study brick kiln detection at scale using high-resolution satellite imagery and curate a multi city zoom-20 (0.149 meters per pixel) resolution dataset comprising over 1.3 million image tiles across five regions in South and Central Asia. We propose ClimateGraph, a region-adaptive graph-based model that captures spatial and directional structure in kiln layouts, and evaluate it against established graph learning baselines. In parallel, we assess a remote sensing based detection pipeline and benchmark it against recent foundation models for satellite imagery. Our results highlight complementary strengths across graph, foundation, and remote sensing approaches, providing practical guidance for scalable brick kiln monitoring from satellite imagery.",
+    "authors": [
+      "Usman Nazir",
+      "Xidong Chen",
+      "Hafiz Muhammad Abubakar",
+      "Hadia Abu Bakar",
+      "Raahim Arbaz",
+      "Fezan Rasool",
+      "Bin Chen",
+      "Sara Khalid"
+    ],
+    "published": "2026-02-12T23:47:31Z",
+    "pdf_url": "https://arxiv.org/pdf/2602.13350v1",
+    "local_path": "data\\raw_pdfs\\2602.13350v1.pdf"
+  },
+  {
+    "arxiv_id": "1902.05433v2",
+    "title": "Predicting Food Security Outcomes Using Convolutional Neural Networks (CNNs) for Satellite Tasking",
+    "summary": "Obtaining reliable data describing local Food Security Metrics (FSM) at a granularity that is informative to policy-makers requires expensive and logistically difficult surveys, particularly in the developing world. We train a CNN on publicly available satellite data describing land cover classification and use both transfer learning and direct training to build a model for FSM prediction purely from satellite imagery data. We then propose efficient tasking algorithms for high resolution satellite assets via transfer learning, Markovian search algorithms, and Bayesian networks.",
+    "authors": [
+      "Swetava Ganguli",
+      "Jared Dunnmon",
+      "Darren Hau"
+    ],
+    "published": "2019-02-13T02:22:12Z",
+    "pdf_url": "https://arxiv.org/pdf/1902.05433v2",
+    "local_path": "data\\raw_pdfs\\1902.05433v2.pdf"
+  },
+  {
+    "arxiv_id": "1610.02482v1",
+    "title": "4D Crop Monitoring: Spatio-Temporal Reconstruction for Agriculture",
+    "summary": "Autonomous crop monitoring at high spatial and temporal resolution is a critical problem in precision agriculture. While Structure from Motion and Multi-View Stereo algorithms can finely reconstruct the 3D structure of a field with low-cost image sensors, these algorithms fail to capture the dynamic nature of continuously growing crops. In this paper we propose a 4D reconstruction approach to crop monitoring, which employs a spatio-temporal model of dynamic scenes that is useful for precision agriculture applications. Additionally, we provide a robust data association algorithm to address the problem of large appearance changes due to scenes being viewed from different angles at different points in time, which is critical to achieving 4D reconstruction. Finally, we collected a high quality dataset with ground truth statistics to evaluate the performance of our method. We demonstrate that our 4D reconstruction approach provides models that are qualitatively correct with respect to visual appearance and quantitatively accurate when measured against the ground truth geometric properties of the monitored crops.",
+    "authors": [
+      "Jing Dong",
+      "John Gary Burnham",
+      "Byron Boots",
+      "Glen C. Rains",
+      "Frank Dellaert"
+    ],
+    "published": "2016-10-08T04:34:25Z",
+    "pdf_url": "https://arxiv.org/pdf/1610.02482v1",
+    "local_path": "data\\raw_pdfs\\1610.02482v1.pdf"
+  },
+  {
+    "arxiv_id": "1709.07383v2",
+    "title": "Urban Land Cover Classification with Missing Data Modalities Using Deep Convolutional Neural Networks",
+    "summary": "Automatic urban land cover classification is a fundamental problem in remote sensing, e.g. for environmental monitoring. The problem is highly challenging, as classes generally have high inter-class and low intra-class variance. Techniques to improve urban land cover classification performance in remote sensing include fusion of data from different sensors with different data modalities. However, such techniques require all modalities to be available to the classifier in the decision-making process, i.e. at test time, as well as in training. If a data modality is missing at test time, current state-of-the-art approaches have in general no procedure available for exploiting information from these modalities. This represents a waste of potentially useful information. We propose as a remedy a convolutional neural network (CNN) architecture for urban land cover classification which is able to embed all available training modalities in a so-called hallucination network. The network will in effect replace missing data modalities in the test phase, enabling fusion capabilities even when data modalities are missing in testing. We demonstrate the method using two datasets consisting of optical and digital surface model (DSM) images. We simulate missing modalities by assuming that DSM images are missing during testing. Our method outperforms both standard CNNs trained only on optical images as well as an ensemble of two standard CNNs. We further evaluate the potential of our method to handle situations where only some DSM images are missing during testing. Overall, we show that we can clearly exploit training time information of the missing modality during testing.",
+    "authors": [
+      "Michael Kampffmeyer",
+      "Arnt-B\u00f8rre Salberg",
+      "Robert Jenssen"
+    ],
+    "published": "2017-09-21T15:46:27Z",
+    "pdf_url": "https://arxiv.org/pdf/1709.07383v2",
+    "local_path": "data\\raw_pdfs\\1709.07383v2.pdf"
+  },
+  {
+    "arxiv_id": "2403.04385v2",
+    "title": "Impacts of Color and Texture Distortions on Earth Observation Data in Deep Learning",
+    "summary": "Land cover classification and change detection are two important applications of remote sensing and Earth observation (EO) that have benefited greatly from the advances of deep learning. Convolutional and transformer-based U-net models are the state-of-the-art architectures for these tasks, and their performances have been boosted by an increased availability of large-scale annotated EO datasets. However, the influence of different visual characteristics of the input EO data on a model's predictions is not well understood. In this work we systematically examine model sensitivities with respect to several color- and texture-based distortions on the input EO data during inference, given models that have been trained without such distortions. We conduct experiments with multiple state-of-the-art segmentation networks for land cover classification and show that they are in general more sensitive to texture than to color distortions. Beyond revealing intriguing characteristics of widely used land cover classification models, our results can also be used to guide the development of more robust models within the EO domain.",
+    "authors": [
+      "Martin Willbo",
+      "Aleksis Pirinen",
+      "John Martinsson",
+      "Edvin Listo Zec",
+      "Olof Mogren",
+      "Mikael Nilsson"
+    ],
+    "published": "2024-03-07T10:25:23Z",
+    "pdf_url": "https://arxiv.org/pdf/2403.04385v2",
+    "local_path": "data\\raw_pdfs\\2403.04385v2.pdf"
+  },
+  {
+    "arxiv_id": "2201.05548v2",
+    "title": "Utilizing geospatial data for assessing energy security: Mapping small solar home systems using unmanned aerial vehicles and deep learning",
+    "summary": "Solar home systems (SHS), a cost-effective solution for rural communities far from the grid in developing countries, are small solar panels and associated equipment that provides power to a single household. A crucial resource for targeting further investment of public and private resources, as well as tracking the progress of universal electrification goals, is shared access to high-quality data on individual SHS installations including information such as location and power capacity. Though recent studies utilizing satellite imagery and machine learning to detect solar panels have emerged, they struggle to accurately locate many SHS due to limited image resolution (some small solar panels only occupy several pixels in satellite imagery). In this work, we explore the viability and cost-performance tradeoff of using automatic SHS detection on unmanned aerial vehicle (UAV) imagery as an alternative to satellite imagery. More specifically, we explore three questions: (i) what is the detection performance of SHS using drone imagery; (ii) how expensive is the drone data collection, compared to satellite imagery; and (iii) how well does drone-based SHS detection perform in real-world scenarios. We collect and publicly-release a dataset of high-resolution drone imagery encompassing SHS imaged under real-world conditions and use this dataset and a dataset from Rwanda to evaluate the capabilities of deep learning models to recognize SHS, including those that are too small to be reliably recognized in satellite imagery. The results suggest that UAV imagery may be a viable alternative to identify very small SHS from perspectives of both detection accuracy and financial costs of data collection. UAV-based data collection may be a practical option for supporting electricity access planning strategies for achieving sustainable development goals and for monitoring the progress towards those goals.",
+    "authors": [
+      "Simiao Ren",
+      "Jordan Malof",
+      "T. Robert Fetter",
+      "Robert Beach",
+      "Jay Rineer",
+      "Kyle Bradbury"
+    ],
+    "published": "2022-01-14T16:38:18Z",
+    "pdf_url": "https://arxiv.org/pdf/2201.05548v2",
+    "local_path": "data\\raw_pdfs\\2201.05548v2.pdf"
+  },
+  {
+    "arxiv_id": "2407.05518v1",
+    "title": "Addressing single object tracking in satellite imagery through prompt-engineered solutions",
+    "summary": "Object tracking in satellite videos remains a complex endeavor in remote sensing due to the intricate and dynamic nature of satellite imagery. Existing state-of-the-art trackers in computer vision integrate sophisticated architectures, attention mechanisms, and multi-modal fusion to enhance tracking accuracy across diverse environments. However, the challenges posed by satellite imagery, such as background variations, atmospheric disturbances, and low-resolution object delineation, significantly impede the precision and reliability of traditional Single Object Tracking (SOT) techniques. Our study delves into these challenges and proposes prompt engineering methodologies, leveraging the Segment Anything Model (SAM) and TAPIR (Tracking Any Point with per-frame Initialization and temporal Refinement), to create a training-free point-based tracking method for small-scale objects on satellite videos. Experiments on the VISO dataset validate our strategy, marking a significant advancement in robust tracking solutions tailored for satellite imagery in remote sensing applications.",
+    "authors": [
+      "Athena Psalta",
+      "Vasileios Tsironis",
+      "Andreas El Saer",
+      "Konstantinos Karantzalos"
+    ],
+    "published": "2024-07-07T23:50:29Z",
+    "pdf_url": "https://arxiv.org/pdf/2407.05518v1",
+    "local_path": "data\\raw_pdfs\\2407.05518v1.pdf"
+  },
+  {
+    "arxiv_id": "2004.14421v1",
+    "title": "UAV and Machine Learning Based Refinement of a Satellite-Driven Vegetation Index for Precision Agriculture",
+    "summary": "Precision agriculture is considered to be a fundamental approach in pursuing a low-input, high-efficiency, and sustainable kind of agriculture when performing site-specific management practices. To achieve this objective, a reliable and updated description of the local status of crops is required. Remote sensing, and in particular satellite-based imagery, proved to be a valuable tool in crop mapping, monitoring, and diseases assessment. However, freely available satellite imagery with low or moderate resolutions showed some limits in specific agricultural applications, e.g., where crops are grown by rows. Indeed, in this framework, the satellite's output could be biased by intra-row covering, giving inaccurate information about crop status. This paper presents a novel satellite imagery refinement framework, based on a deep learning technique which exploits information properly derived from high resolution images acquired by unmanned aerial vehicle (UAV) airborne multispectral sensors. To train the convolutional neural network, only a single UAV-driven dataset is required, making the proposed approach simple and cost-effective. A vineyard in Serralunga d'Alba (Northern Italy) was chosen as a case study for validation purposes. Refined satellite-driven normalized difference vegetation index (NDVI) maps, acquired in four different periods during the vine growing season, were shown to better describe crop status with respect to raw datasets by correlation analysis and ANOVA. In addition, using a K-means based classifier, 3-class vineyard vigor maps were profitably derived from the NDVI maps, which are a valuable tool for growers.",
+    "authors": [
+      "Vittorio Mazzia",
+      "Lorenzo Comba",
+      "Aleem Khaliq",
+      "Marcello Chiaberge",
+      "Paolo Gay"
+    ],
+    "published": "2020-04-29T18:34:48Z",
+    "pdf_url": "https://arxiv.org/pdf/2004.14421v1",
+    "local_path": "data\\raw_pdfs\\2004.14421v1.pdf"
+  },
+  {
+    "arxiv_id": "1303.6619v1",
+    "title": "An N-dimensional approach towards object based classification of remotely sensed imagery",
+    "summary": "Remote sensing techniques are widely used for land cover classification and urban analysis. The availability of high resolution remote sensing imagery limits the level of classification accuracy attainable from pixel-based approach. In this paper object-based classification scheme based on a hierarchical support vector machine is introduced. By combining spatial and spectral information, the amount of overlap between classes can be decreased; thereby yielding higher classification accuracy and more accurate land cover maps. We have adopted certain automatic approaches based on the advanced techniques as Cellular automata and Genetic Algorithm for kernel and tuning parameter selection. Performance evaluation of the proposed methodology in comparison with the existing approaches is performed with reference to the Bhopal city study area.",
+    "authors": [
+      "Arun p",
+      "S. K. Katiyar"
+    ],
+    "published": "2013-03-26T19:39:20Z",
+    "pdf_url": "https://arxiv.org/pdf/1303.6619v1",
+    "local_path": "data\\raw_pdfs\\1303.6619v1.pdf"
+  },
+  {
+    "arxiv_id": "2212.04468v1",
+    "title": "Investigation of Minerals Using Hyperspectral Satellite Imagery in Bangladesh",
+    "summary": "Mineral identification using remote sensing technologies is becoming more dominant in this field since it saves time by demonstrating a more effective way for land resources survey. In such remote sensing technologies, hyperspectral remote sensing (HSRS) technology has increased gradually for its efficient manner. This technology is usually used from an airborne platform, i.e., satellite. Hence, satellite imagery remote sensing technology is now more capable of providing accuracy in mineral identification, and mapping. Hyperspectral satellite imagery can identify minerals more accurately compared to traditional technologies in remote sensing by constructing a complete reflectance of the spectrum from each pixel with its advanced imaging sensor. Bangladesh is a developing country with an area of 1,50,000 square kilometers located in Southeast Asia. Though it is a small country, it is enriched with several mineral resources through rivers, forests, hills, and the Bay of Bengal. In this study, hyperspectral imaging technology is employed on some major identical areas (Maheshkhali, Netrokona, Panchagarh, and Patuakhali) of Bangladesh to identify minerals there. As there are no studies done in Bangladesh using hyperspectral imaging yet, it is a good opportunity to explore the potentiality of HS imagery in this field. In this study, the FLAASH (Fast Line-of-sight Atmospheric Analysis) module with necessary parameter settings is used to filter the data, and finally, mineral identification is done by the spectral matched filtering method. Our investigation resulted in finding some potential minerals in those areas including Stariolite, Diasphore, Zircon, Alunite, Quartz, and so on. This indicates that there still is enormous potential for further exploration of minerals in Bangladesh by Hyperspectral Satellite Imagery.",
+    "authors": [
+      "Nazmul Hasan",
+      "Kazi Mahmudul Hasan",
+      "Md. Tahsinul Islam",
+      "Shahnewaz Siddique"
+    ],
+    "published": "2022-12-08T18:41:02Z",
+    "pdf_url": "https://arxiv.org/pdf/2212.04468v1",
+    "local_path": "data\\raw_pdfs\\2212.04468v1.pdf"
+  },
+  {
+    "arxiv_id": "1807.05713v3",
+    "title": "Land-Cover Classification with High-Resolution Remote Sensing Images Using Transferable Deep Models",
+    "summary": "In recent years, large amount of high spatial-resolution remote sensing (HRRS) images are available for land-cover mapping. However, due to the complex information brought by the increased spatial resolution and the data disturbances caused by different conditions of image acquisition, it is often difficult to find an efficient method for achieving accurate land-cover classification with high-resolution and heterogeneous remote sensing images. In this paper, we propose a scheme to apply deep model obtained from labeled land-cover dataset to classify unlabeled HRRS images. The main idea is to rely on deep neural networks for presenting the contextual information contained in different types of land-covers and propose a pseudo-labeling and sample selection scheme for improving the transferability of deep models. More precisely, a deep Convolutional Neural Networks is first pre-trained with a well-annotated land-cover dataset, referred to as the source data. Then, given a target image with no labels, the pre-trained CNN model is utilized to classify the image in a patch-wise manner. The patches with high confidence are assigned with pseudo-labels and employed as the queries to retrieve related samples from the source data. The pseudo-labels confirmed with the retrieved results are regarded as supervised information for fine-tuning the pre-trained deep model. To obtain a pixel-wise land-cover classification with the target image, we rely on the fine-tuned CNN and develop a hybrid classification by combining patch-wise classification and hierarchical segmentation. In addition, we create a large-scale land-cover dataset containing 150 Gaofen-2 satellite images for CNN pre-training. Experiments on multi-source HRRS images show encouraging results and demonstrate the applicability of the proposed scheme to land-cover classification.",
+    "authors": [
+      "Xin-Yi Tong",
+      "Gui-Song Xia",
+      "Qikai Lu",
+      "Huanfeng Shen",
+      "Shengyang Li",
+      "Shucheng You",
+      "Liangpei Zhang"
+    ],
+    "published": "2018-07-16T08:02:10Z",
+    "pdf_url": "https://arxiv.org/pdf/1807.05713v3",
+    "local_path": "data\\raw_pdfs\\1807.05713v3.pdf"
+  },
+  {
+    "arxiv_id": "2403.09651v1",
+    "title": "Precision Agriculture: Crop Mapping using Machine Learning and Sentinel-2 Satellite Imagery",
+    "summary": "Food security has grown in significance due to the changing climate and its warming effects. To support the rising demand for agricultural products and to minimize the negative impact of climate change and mass cultivation, precision agriculture has become increasingly important for crop cultivation. This study employs deep learning and pixel-based machine learning methods to accurately segment lavender fields for precision agriculture, utilizing various spectral band combinations extracted from Sentinel-2 satellite imagery. Our fine-tuned final model, a U-Net architecture, can achieve a Dice coefficient of 0.8324. Additionally, our investigation highlights the unexpected efficacy of the pixel-based method and the RGB spectral band combination in this task.",
+    "authors": [
+      "Kui Zhao",
+      "Siyang Wu",
+      "Chang Liu",
+      "Yue Wu",
+      "Natalia Efremova"
+    ],
+    "published": "2023-11-25T20:26:11Z",
+    "pdf_url": "https://arxiv.org/pdf/2403.09651v1",
+    "local_path": "data\\raw_pdfs\\2403.09651v1.pdf"
+  },
+  {
+    "arxiv_id": "2311.12083v1",
+    "title": "PanBench: Towards High-Resolution and High-Performance Pansharpening",
+    "summary": "Pansharpening, a pivotal task in remote sensing, involves integrating low-resolution multispectral images with high-resolution panchromatic images to synthesize an image that is both high-resolution and retains multispectral information. These pansharpened images enhance precision in land cover classification, change detection, and environmental monitoring within remote sensing data analysis. While deep learning techniques have shown significant success in pansharpening, existing methods often face limitations in their evaluation, focusing on restricted satellite data sources, single scene types, and low-resolution images. This paper addresses this gap by introducing PanBench, a high-resolution multi-scene dataset containing all mainstream satellites and comprising 5,898 pairs of samples. Each pair includes a four-channel (RGB + near-infrared) multispectral image of 256x256 pixels and a mono-channel panchromatic image of 1,024x1,024 pixels. To achieve high-fidelity synthesis, we propose a Cascaded Multiscale Fusion Network (CMFNet) for Pansharpening. Extensive experiments validate the effectiveness of CMFNet. We have released the dataset, source code, and pre-trained models in the supplementary, fostering further research in remote sensing.",
+    "authors": [
+      "Shiying Wang",
+      "Xuechao Zou",
+      "Kai Li",
+      "Junliang Xing",
+      "Pin Tao"
+    ],
+    "published": "2023-11-20T10:57:23Z",
+    "pdf_url": "https://arxiv.org/pdf/2311.12083v1",
+    "local_path": "data\\raw_pdfs\\2311.12083v1.pdf"
+  },
+  {
+    "arxiv_id": "2506.15565v2",
+    "title": "Baltimore Atlas: FreqWeaver Adapter for Semi-supervised Ultra-high Spatial Resolution Land Cover Classification",
+    "summary": "Ultra-high Spatial Resolution (UHSR) Land Cover Classification is increasingly important for urban analysis, enabling fine-scale planning, ecological monitoring, and infrastructure management. It identifies land cover types on sub-meter remote sensing imagery, capturing details such as building outlines, road networks, and distinct boundaries. However, most existing methods focus on 1 m imagery and rely heavily on large-scale annotations, while UHSR data remain scarce and difficult to annotate, limiting practical applicability. To address these challenges, we introduce Baltimore Atlas, a UHSR land cover classification framework that reduces reliance on large-scale training data and delivers high-accuracy results. Baltimore Atlas builds on three key ideas: (1) Baltimore Atlas Dataset, a 0.3 m resolution dataset based on aerial imagery of Baltimore City; (2) FreqWeaver Adapter, a parameter-efficient adapter that transfers SAM2 to this domain, leveraging foundation model knowledge to reduce training data needs while enabling fine-grained detail and structural modeling; (3) Uncertainty-Aware Teacher Student Framework, a semi-supervised framework that exploits unlabeled data to further reduce training dependence and improve generalization across diverse scenes. Using only 5.96% of total model parameters, our approach achieves a 1.78% IoU improvement over existing parameter-efficient tuning strategies and a 3.44% IoU gain compared to state-of-the-art high-resolution remote sensing segmentation methods on the Baltimore Atlas Dataset.",
+    "authors": [
+      "Junhao Wu",
+      "Aboagye-Ntow Stephen",
+      "Chuyuan Wang",
+      "Gang Chen",
+      "Xin Huang"
+    ],
+    "published": "2025-06-18T15:41:29Z",
+    "pdf_url": "https://arxiv.org/pdf/2506.15565v2",
+    "local_path": "data\\raw_pdfs\\2506.15565v2.pdf"
+  },
+  {
+    "arxiv_id": "2312.17016v1",
+    "title": "On the Promises and Challenges of Multimodal Foundation Models for Geographical, Environmental, Agricultural, and Urban Planning Applications",
+    "summary": "The advent of large language models (LLMs) has heightened interest in their potential for multimodal applications that integrate language and vision. This paper explores the capabilities of GPT-4V in the realms of geography, environmental science, agriculture, and urban planning by evaluating its performance across a variety of tasks. Data sources comprise satellite imagery, aerial photos, ground-level images, field images, and public datasets. The model is evaluated on a series of tasks including geo-localization, textual data extraction from maps, remote sensing image classification, visual question answering, crop type identification, disease/pest/weed recognition, chicken behavior analysis, agricultural object counting, urban planning knowledge question answering, and plan generation. The results indicate the potential of GPT-4V in geo-localization, land cover classification, visual question answering, and basic image understanding. However, there are limitations in several tasks requiring fine-grained recognition and precise counting. While zero-shot learning shows promise, performance varies across problem domains and image complexities. The work provides novel insights into GPT-4V's capabilities and limitations for real-world geospatial, environmental, agricultural, and urban planning challenges. Further research should focus on augmenting the model's knowledge and reasoning for specialized domains through expanded training. Overall, the analysis demonstrates foundational multimodal intelligence, highlighting the potential of multimodal foundation models (FMs) to advance interdisciplinary applications at the nexus of computer vision and language.",
+    "authors": [
+      "Chenjiao Tan",
+      "Qian Cao",
+      "Yiwei Li",
+      "Jielu Zhang",
+      "Xiao Yang",
+      "Huaqin Zhao",
+      "Zihao Wu",
+      "Zhengliang Liu",
+      "Hao Yang",
+      "Nemin Wu",
+      "Tao Tang",
+      "Xinyue Ye",
+      "Lilong Chai",
+      "Ninghao Liu",
+      "Changying Li",
+      "Lan Mu",
+      "Tianming Liu",
+      "Gengchen Mai"
+    ],
+    "published": "2023-12-23T22:36:58Z",
+    "pdf_url": "https://arxiv.org/pdf/2312.17016v1",
+    "local_path": "data\\raw_pdfs\\2312.17016v1.pdf"
+  },
+  {
+    "arxiv_id": "2110.08590v2",
+    "title": "Automated Remote Sensing Forest Inventory Using Satellite Imagery",
+    "summary": "For many countries like Russia, Canada, or the USA, a robust and detailed tree species inventory is essential to manage their forests sustainably. Since one can not apply unmanned aerial vehicle (UAV) imagery-based approaches to large-scale forest inventory applications, the utilization of machine learning algorithms on satellite imagery is a rising topic of research. Although satellite imagery quality is relatively low, additional spectral channels provide a sufficient amount of information for tree crown classification tasks. Assuming that tree crowns are detected already, we use embeddings of tree crowns generated by Autoencoders as a data set to train classical Machine Learning algorithms. We compare our Autoencoder (AE) based approach to traditional convolutional neural networks (CNN) end-to-end classifiers.",
+    "authors": [
+      "Abduragim Shtanchaev",
+      "Artur Bille",
+      "Olga Sutyrina",
+      "Sara Elelimy"
+    ],
+    "published": "2021-10-16T15:24:12Z",
+    "pdf_url": "https://arxiv.org/pdf/2110.08590v2",
+    "local_path": "data\\raw_pdfs\\2110.08590v2.pdf"
+  },
+  {
+    "arxiv_id": "2106.08151v1",
+    "title": "EuroCrops: A Pan-European Dataset for Time Series Crop Type Classification",
+    "summary": "We present EuroCrops, a dataset based on self-declared field annotations for training and evaluating methods for crop type classification and mapping, together with its process of acquisition and harmonisation. By this, we aim to enrich the research efforts and discussion for data-driven land cover classification via Earth observation and remote sensing. Additionally, through inclusion of self-declarations gathered in the scope of subsidy control from all countries of the European Union (EU), this dataset highlights the difficulties and pitfalls one comes across when operating on a transnational level. We, therefore, also introduce a new taxonomy scheme, HCAT-ID, that aspires to capture all the aspects of reference data originating from administrative and agency databases. To address researchers from both the remote sensing and the computer vision and machine learning communities, we publish the dataset in different formats and processing levels.",
+    "authors": [
+      "Maja Schneider",
+      "Amelie Broszeit",
+      "Marco K\u00f6rner"
+    ],
+    "published": "2021-06-14T15:21:50Z",
+    "pdf_url": "https://arxiv.org/pdf/2106.08151v1",
+    "local_path": "data\\raw_pdfs\\2106.08151v1.pdf"
+  },
+  {
+    "arxiv_id": "2111.03443v1",
+    "title": "Nondestructive Testing of Composite Fibre Materials with Hyperspectral Imaging : Evaluative Studies in the EU H2020 FibreEUse Project",
+    "summary": "Through capturing spectral data from a wide frequency range along with the spatial information, hyperspectral imaging (HSI) can detect minor differences in terms of temperature, moisture and chemical composition. Therefore, HSI has been successfully applied in various applications, including remote sensing for security and defense, precision agriculture for vegetation and crop monitoring, food/drink, and pharmaceuticals quality control. However, for condition monitoring and damage detection in carbon fibre reinforced polymer (CFRP), the use of HSI is a relatively untouched area, as existing non-destructive testing (NDT) techniques focus mainly on delivering information about physical integrity of structures but not on material composition. To this end, HSI can provide a unique way to tackle this challenge. In this paper, with the use of a near-infrared HSI camera, applications of HSI for the non-destructive inspection of CFRP products are introduced, taking the EU H2020 FibreEUse project as the background. Technical challenges and solutions on three case studies are presented in detail, including adhesive residues detection, surface damage detection and Cobot based automated inspection. Experimental results have fully demonstrated the great potential of HSI and related vision techniques for NDT of CFRP, especially the potential to satisfy the industrial manufacturing environment.",
+    "authors": [
+      "Yijun Yan",
+      "Jinchang Ren",
+      "Huan Zhao",
+      "James F. C. Windmill",
+      "Winifred Ijomah",
+      "Jesper de Wit",
+      "Justus von Freeden"
+    ],
+    "published": "2021-11-04T17:01:38Z",
+    "pdf_url": "https://arxiv.org/pdf/2111.03443v1",
+    "local_path": "data\\raw_pdfs\\2111.03443v1.pdf"
+  },
+  {
+    "arxiv_id": "2003.02899v1",
+    "title": "Segmentation of Satellite Imagery using U-Net Models for Land Cover Classification",
+    "summary": "The focus of this paper is using a convolutional machine learning model with a modified U-Net structure for creating land cover classification mapping based on satellite imagery. The aim of the research is to train and test convolutional models for automatic land cover mapping and to assess their usability in increasing land cover mapping accuracy and change detection. To solve these tasks, authors prepared a dataset and trained machine learning models for land cover classification and semantic segmentation from satellite images. The results were analysed on three different land classification levels. BigEarthNet satellite image archive was selected for the research as one of two main datasets. This novel and recent dataset was published in 2019 and includes Sentinel-2 satellite photos from 10 European countries made in 2017 and 2018. As a second dataset the authors composed an original set containing a Sentinel-2 image and a CORINE land cover map of Estonia. The developed classification model shows a high overall F\\textsubscript{1} score of 0.749 on multiclass land cover classification with 43 possible image labels. The model also highlights noisy data in the BigEarthNet dataset, where images seem to have incorrect labels. The segmentation models offer a solution for generating automatic land cover mappings based on Sentinel-2 satellite images and show a high IoU score for land cover classes such as forests, inland waters and arable land. The models show a capability of increasing the accuracy of existing land classification maps and in land cover change detection.",
+    "authors": [
+      "Priit Ulmas",
+      "Innar Liiv"
+    ],
+    "published": "2020-03-05T20:07:48Z",
+    "pdf_url": "https://arxiv.org/pdf/2003.02899v1",
+    "local_path": "data\\raw_pdfs\\2003.02899v1.pdf"
+  },
+  {
+    "arxiv_id": "2603.04720v1",
+    "title": "A Benchmark Study of Neural Network Compression Methods for Hyperspectral Image Classification",
+    "summary": "Deep neural networks have achieved strong performance in image classification tasks due to their ability to learn complex patterns from high-dimensional data. However, their large computational and memory requirements often limit deployment on resource-constrained platforms such as remote sensing devices and edge systems. Network compression techniques have therefore been proposed to reduce model size and computational cost while maintaining predictive performance. In this study, we conduct a systematic evaluation of neural network compression methods for a remote sensing application, namely hyperspectral land cover classification. Specifically, we examine three widely used compression strategies for convolutional neural networks: pruning, quantization, and knowledge distillation. Experiments are conducted on two benchmark hyperspectral datasets, considering classification accuracy, memory consumption, and inference efficiency. Our results demonstrate that compressed models can significantly reduce model size and computational cost while maintaining competitive classification performance. These findings provide insights into the trade-offs between compression ratio, efficiency, and accuracy, and highlight the potential of compression techniques for enabling efficient deep learning deployment in remote sensing applications.",
+    "authors": [
+      "Sai Shi"
+    ],
+    "published": "2026-03-05T01:48:30Z",
+    "pdf_url": "https://arxiv.org/pdf/2603.04720v1",
+    "local_path": "data\\raw_pdfs\\2603.04720v1.pdf"
+  },
+  {
+    "arxiv_id": "2504.11154v1",
+    "title": "SAR-to-RGB Translation with Latent Diffusion for Earth Observation",
+    "summary": "Earth observation satellites like Sentinel-1 (S1) and Sentinel-2 (S2) provide complementary remote sensing (RS) data, but S2 images are often unavailable due to cloud cover or data gaps. To address this, we propose a diffusion model (DM)-based approach for SAR-to-RGB translation, generating synthetic optical images from SAR inputs. We explore three different setups: two using Standard Diffusion, which reconstruct S2 images by adding and removing noise (one without and one with class conditioning), and one using Cold Diffusion, which blends S2 with S1 before removing the SAR signal. We evaluate the generated images in downstream tasks, including land cover classification and cloud removal. While generated images may not perfectly replicate real S2 data, they still provide valuable information. Our results show that class conditioning improves classification accuracy, while cloud removal performance remains competitive despite our approach not being optimized for it. Interestingly, despite exhibiting lower perceptual quality, the Cold Diffusion setup performs well in land cover classification, suggesting that traditional quantitative evaluation metrics may not fully reflect the practical utility of generated images. Our findings highlight the potential of DMs for SAR-to-RGB translation in RS applications where RGB images are missing.",
+    "authors": [
+      "Kaan Aydin",
+      "Joelle Hanna",
+      "Damian Borth"
+    ],
+    "published": "2025-04-15T12:58:30Z",
+    "pdf_url": "https://arxiv.org/pdf/2504.11154v1",
+    "local_path": "data\\raw_pdfs\\2504.11154v1.pdf"
+  },
+  {
+    "arxiv_id": "2401.05093v1",
+    "title": "SwiMDiff: Scene-wide Matching Contrastive Learning with Diffusion Constraint for Remote Sensing Image",
+    "summary": "With recent advancements in aerospace technology, the volume of unlabeled remote sensing image (RSI) data has increased dramatically. Effectively leveraging this data through self-supervised learning (SSL) is vital in the field of remote sensing. However, current methodologies, particularly contrastive learning (CL), a leading SSL method, encounter specific challenges in this domain. Firstly, CL often mistakenly identifies geographically adjacent samples with similar semantic content as negative pairs, leading to confusion during model training. Secondly, as an instance-level discriminative task, it tends to neglect the essential fine-grained features and complex details inherent in unstructured RSIs. To overcome these obstacles, we introduce SwiMDiff, a novel self-supervised pre-training framework designed for RSIs. SwiMDiff employs a scene-wide matching approach that effectively recalibrates labels to recognize data from the same scene as false negatives. This adjustment makes CL more applicable to the nuances of remote sensing. Additionally, SwiMDiff seamlessly integrates CL with a diffusion model. Through the implementation of pixel-level diffusion constraints, we enhance the encoder's ability to capture both the global semantic information and the fine-grained features of the images more comprehensively. Our proposed framework significantly enriches the information available for downstream tasks in remote sensing. Demonstrating exceptional performance in change detection and land-cover classification tasks, SwiMDiff proves its substantial utility and value in the field of remote sensing.",
+    "authors": [
+      "Jiayuan Tian",
+      "Jie Lei",
+      "Jiaqing Zhang",
+      "Weiying Xie",
+      "Yunsong Li"
+    ],
+    "published": "2024-01-10T11:55:58Z",
+    "pdf_url": "https://arxiv.org/pdf/2401.05093v1",
+    "local_path": "data\\raw_pdfs\\2401.05093v1.pdf"
+  },
+  {
+    "arxiv_id": "2411.06091v1",
+    "title": "Pattern Integration and Enhancement Vision Transformer for Self-Supervised Learning in Remote Sensing",
+    "summary": "Recent self-supervised learning (SSL) methods have demonstrated impressive results in learning visual representations from unlabeled remote sensing images. However, most remote sensing images predominantly consist of scenographic scenes containing multiple ground objects without explicit foreground targets, which limits the performance of existing SSL methods that focus on foreground targets. This raises the question: Is there a method that can automatically aggregate similar objects within scenographic remote sensing images, thereby enabling models to differentiate knowledge embedded in various geospatial patterns for improved feature representation? In this work, we present the Pattern Integration and Enhancement Vision Transformer (PIEViT), a novel self-supervised learning framework designed specifically for remote sensing imagery. PIEViT utilizes a teacher-student architecture to address both image-level and patch-level tasks. It employs the Geospatial Pattern Cohesion (GPC) module to explore the natural clustering of patches, enhancing the differentiation of individual features. The Feature Integration Projection (FIP) module further refines masked token reconstruction using geospatially clustered patches. We validated PIEViT across multiple downstream tasks, including object detection, semantic segmentation, and change detection. Experiments demonstrated that PIEViT enhances the representation of internal patch features, providing significant improvements over existing self-supervised baselines. It achieves excellent results in object detection, land cover classification, and change detection, underscoring its robustness, generalization, and transferability for remote sensing image interpretation tasks.",
+    "authors": [
+      "Kaixuan Lu",
+      "Ruiqian Zhang",
+      "Xiao Huang",
+      "Yuxing Xie",
+      "Xiaogang Ning",
+      "Hanchao Zhang",
+      "Mengke Yuan",
+      "Pan Zhang",
+      "Tao Wang",
+      "Tongkui Liao"
+    ],
+    "published": "2024-11-09T07:06:31Z",
+    "pdf_url": "https://arxiv.org/pdf/2411.06091v1",
+    "local_path": "data\\raw_pdfs\\2411.06091v1.pdf"
+  },
+  {
+    "arxiv_id": "2505.04003v1",
+    "title": "Prototype-Based Information Compensation Network for Multi-Source Remote Sensing Data Classification",
+    "summary": "Multi-source remote sensing data joint classification aims to provide accuracy and reliability of land cover classification by leveraging the complementary information from multiple data sources. Existing methods confront two challenges: inter-frequency multi-source feature coupling and inconsistency of complementary information exploration. To solve these issues, we present a Prototype-based Information Compensation Network (PICNet) for land cover classification based on HSI and SAR/LiDAR data. Specifically, we first design a frequency interaction module to enhance the inter-frequency coupling in multi-source feature extraction. The multi-source features are first decoupled into high- and low-frequency components. Then, these features are recoupled to achieve efficient inter-frequency communication. Afterward, we design a prototype-based information compensation module to model the global multi-source complementary information. Two sets of learnable modality prototypes are introduced to represent the global modality information of multi-source data. Subsequently, cross-modal feature integration and alignment are achieved through cross-attention computation between the modality-specific prototype vectors and the raw feature representations. Extensive experiments on three public datasets demonstrate the significant superiority of our PICNet over state-of-the-art methods. The codes are available at https://github.com/oucailab/PICNet.",
+    "authors": [
+      "Feng Gao",
+      "Sheng Liu",
+      "Chuanzheng Gong",
+      "Xiaowei Zhou",
+      "Jiayi Wang",
+      "Junyu Dong",
+      "Qian Du"
+    ],
+    "published": "2025-05-06T22:30:23Z",
+    "pdf_url": "https://arxiv.org/pdf/2505.04003v1",
+    "local_path": "data\\raw_pdfs\\2505.04003v1.pdf"
+  },
+  {
+    "arxiv_id": "2402.11325v2",
+    "title": "ChatEarthNet: A Global-Scale Image-Text Dataset Empowering Vision-Language Geo-Foundation Models",
+    "summary": "An in-depth comprehension of global land cover is essential in Earth observation, forming the foundation for a multitude of applications. Although remote sensing technology has advanced rapidly, leading to a proliferation of satellite imagery, the inherent complexity of these images often makes them difficult for non-expert users to understand. Natural language, as a carrier of human knowledge, can be a bridge between common users and complicated satellite imagery. In this context, we introduce a global-scale, high-quality image-text dataset for remote sensing, providing natural language descriptions for Sentinel-2 data to facilitate the understanding of satellite imagery for common users. Specifically, we utilize Sentinel-2 data for its global coverage as the foundational image source, employing semantic segmentation labels from the European Space Agency's (ESA) WorldCover project to enrich the descriptions of land covers. By conducting in-depth semantic analysis, we formulate detailed prompts to elicit rich descriptions from ChatGPT. To enhance the dataset's quality, we introduce the manual verification process. This step involves manual inspection and correction to refine the dataset, thus significantly improving its accuracy and quality. Finally, we offer the community ChatEarthNet, a large-scale image-text dataset characterized by global coverage, high quality, wide-ranging diversity, and detailed descriptions. ChatEarthNet consists of 163,488 image-text pairs with captions generated by ChatGPT-3.5 and an additional 10,000 image-text pairs with captions generated by ChatGPT-4V(ision). This dataset has significant potential for training vision-language geo-foundation models and evaluating large vision-language models for remote sensing. The dataset will be made publicly available.",
+    "authors": [
+      "Zhenghang Yuan",
+      "Zhitong Xiong",
+      "Lichao Mou",
+      "Xiao Xiang Zhu"
+    ],
+    "published": "2024-02-17T16:38:40Z",
+    "pdf_url": "https://arxiv.org/pdf/2402.11325v2",
+    "local_path": "data\\raw_pdfs\\2402.11325v2.pdf"
+  },
+  {
+    "arxiv_id": "2510.17014v1",
+    "title": "Do Satellite Tasks Need Special Pretraining?",
+    "summary": "Foundation models have advanced machine learning across various modalities, including images. Recently multiple teams trained foundation models specialized for remote sensing applications. This line of research is motivated by the distinct characteristics of remote sensing imagery, specific applications and types of robustness useful for satellite image analysis. In this work we systematically challenge the idea that specific foundation models are more useful than general-purpose vision foundation models, at least in the small scale. First, we design a simple benchmark that measures generalization of remote sensing models towards images with lower resolution for two downstream tasks. Second, we train iBOT, a self-supervised vision encoder, on MillionAID, an ImageNet-scale satellite imagery dataset, with several modifications specific to remote sensing. We show that none of those pretrained models bring consistent improvements upon general-purpose baselines at the ViT-B scale.",
+    "authors": [
+      "Ani Vanyan",
+      "Alvard Barseghyan",
+      "Hakob Tamazyan",
+      "Tigran Galstyan",
+      "Vahan Huroyan",
+      "Naira Hovakimyan",
+      "Hrant Khachatrian"
+    ],
+    "published": "2025-10-19T21:32:01Z",
+    "pdf_url": "https://arxiv.org/pdf/2510.17014v1",
+    "local_path": "data\\raw_pdfs\\2510.17014v1.pdf"
+  },
+  {
+    "arxiv_id": "2302.01793v1",
+    "title": "Self-Supervised In-Domain Representation Learning for Remote Sensing Image Scene Classification",
+    "summary": "Transferring the ImageNet pre-trained weights to the various remote sensing tasks has produced acceptable results and reduced the need for labeled samples. However, the domain differences between ground imageries and remote sensing images cause the performance of such transfer learning to be limited. Recent research has demonstrated that self-supervised learning methods capture visual features that are more discriminative and transferable than the supervised ImageNet weights. We are motivated by these facts to pre-train the in-domain representations of remote sensing imagery using contrastive self-supervised learning and transfer the learned features to other related remote sensing datasets. Specifically, we used the SimSiam algorithm to pre-train the in-domain knowledge of remote sensing datasets and then transferred the obtained weights to the other scene classification datasets. Thus, we have obtained state-of-the-art results on five land cover classification datasets with varying numbers of classes and spatial resolutions. In addition, By conducting appropriate experiments, including feature pre-training using datasets with different attributes, we have identified the most influential factors that make a dataset a good choice for obtaining in-domain features. We have transferred the features obtained by pre-training SimSiam on remote sensing datasets to various downstream tasks and used them as initial weights for fine-tuning. Moreover, we have linearly evaluated the obtained representations in cases where the number of samples per class is limited. Our experiments have demonstrated that using a higher-resolution dataset during the self-supervised pre-training stage results in learning more discriminative and general representations.",
+    "authors": [
+      "Ali Ghanbarzade",
+      "Hossein Soleimani"
+    ],
+    "published": "2023-02-03T15:03:07Z",
+    "pdf_url": "https://arxiv.org/pdf/2302.01793v1",
+    "local_path": "data\\raw_pdfs\\2302.01793v1.pdf"
+  },
+  {
+    "arxiv_id": "2207.13866v1",
+    "title": "MKANet: A Lightweight Network with Sobel Boundary Loss for Efficient Land-cover Classification of Satellite Remote Sensing Imagery",
+    "summary": "Land cover classification is a multi-class segmentation task to classify each pixel into a certain natural or man-made category of the earth surface, such as water, soil, natural vegetation, crops, and human infrastructure. Limited by hardware computational resources and memory capacity, most existing studies preprocessed original remote sensing images by down sampling or cropping them into small patches less than 512*512 pixels before sending them to a deep neural network. However, down sampling images incurs spatial detail loss, renders small segments hard to discriminate, and reverses the spatial resolution progress obtained by decades of years of efforts. Cropping images into small patches causes a loss of long-range context information, and restoring the predicted results to their original size brings extra latency. In response to the above weaknesses, we present an efficient lightweight semantic segmentation network termed MKANet. Aimed at the characteristics of top view high-resolution remote sensing imagery, MKANet utilizes sharing kernels to simultaneously and equally handle ground segments of inconsistent scales, and also employs parallel and shallow architecture to boost inference speed and friendly support image patches more than 10X larger. To enhance boundary and small segments discrimination, we also propose a method that captures category impurity areas, exploits boundary information and exerts an extra penalty on boundaries and small segment misjudgment. Both visual interpretations and quantitative metrics of extensive experiments demonstrate that MKANet acquires state-of-the-art accuracy on two land-cover classification datasets and infers 2X faster than other competitive lightweight networks. All these merits highlight the potential of MKANet in practical applications.",
+    "authors": [
+      "Zhiqi Zhang",
+      "Wen Lu",
+      "Jinshan Cao",
+      "Guangqi Xie"
+    ],
+    "published": "2022-07-28T03:29:08Z",
+    "pdf_url": "https://arxiv.org/pdf/2207.13866v1",
+    "local_path": "data\\raw_pdfs\\2207.13866v1.pdf"
+  },
+  {
+    "arxiv_id": "2003.07333v2",
+    "title": "RSVQA: Visual Question Answering for Remote Sensing Data",
+    "summary": "This paper introduces the task of visual question answering for remote sensing data (RSVQA). Remote sensing images contain a wealth of information which can be useful for a wide range of tasks including land cover classification, object counting or detection. However, most of the available methodologies are task-specific, thus inhibiting generic and easy access to the information contained in remote sensing data. As a consequence, accurate remote sensing product generation still requires expert knowledge. With RSVQA, we propose a system to extract information from remote sensing data that is accessible to every user: we use questions formulated in natural language and use them to interact with the images. With the system, images can be queried to obtain high level information specific to the image content or relational dependencies between objects visible in the images. Using an automatic method introduced in this article, we built two datasets (using low and high resolution data) of image/question/answer triplets. The information required to build the questions and answers is queried from OpenStreetMap (OSM). The datasets can be used to train (when using supervised methods) and evaluate models to solve the RSVQA task. We report the results obtained by applying a model based on Convolutional Neural Networks (CNNs) for the visual part and on a Recurrent Neural Network (RNN) for the natural language part to this task. The model is trained on the two datasets, yielding promising results in both cases.",
+    "authors": [
+      "Sylvain Lobry",
+      "Diego Marcos",
+      "Jesse Murray",
+      "Devis Tuia"
+    ],
+    "published": "2020-03-16T17:09:31Z",
+    "pdf_url": "https://arxiv.org/pdf/2003.07333v2",
+    "local_path": "data\\raw_pdfs\\2003.07333v2.pdf"
+  },
+  {
+    "arxiv_id": "2508.02871v1",
+    "title": "Evaluation and Analysis of Deep Neural Transformers and Convolutional Neural Networks on Modern Remote Sensing Datasets",
+    "summary": "In 2012, AlexNet established deep convolutional neural networks (DCNNs) as the state-of-the-art in CV, as these networks soon led in visual tasks for many domains, including remote sensing. With the publication of Visual Transformers, we are witnessing the second modern leap in computational vision, and as such, it is imperative to understand how various transformer-based neural networks perform on satellite imagery. While transformers have shown high levels of performance in natural language processing and CV applications, they have yet to be compared on a large scale to modern remote sensing data. In this paper, we explore the use of transformer-based neural networks for object detection in high-resolution electro-optical satellite imagery, demonstrating state-of-the-art performance on a variety of publicly available benchmark data sets. We compare eleven distinct bounding-box detection and localization algorithms in this study, of which seven were published since 2020, and all eleven since 2015. The performance of five transformer-based architectures is compared with six convolutional networks on three state-of-the-art opensource high-resolution remote sensing imagery datasets ranging in size and complexity. Following the training and evaluation of thirty-three deep neural models, we then discuss and analyze model performance across various feature extraction methodologies and detection algorithms.",
+    "authors": [
+      "J. Alex Hurt",
+      "Trevor M. Bajkowski",
+      "Grant J. Scott",
+      "Curt H. Davis"
+    ],
+    "published": "2025-08-04T19:55:52Z",
+    "pdf_url": "https://arxiv.org/pdf/2508.02871v1",
+    "local_path": "data\\raw_pdfs\\2508.02871v1.pdf"
+  },
+  {
+    "arxiv_id": "1910.02989v2",
+    "title": "Leveraging Vision Reconstruction Pipelines for Satellite Imagery",
+    "summary": "Reconstructing 3D geometry from satellite imagery is an important topic of research. However, disparities exist between how this 3D reconstruction problem is handled in the remote sensing context and how multi-view reconstruction pipelines have been developed in the computer vision community. In this paper, we explore whether state-of-the-art reconstruction pipelines from the vision community can be applied to the satellite imagery. Along the way, we address several challenges adapting vision-based structure from motion and multi-view stereo methods. We show that vision pipelines can offer competitive speed and accuracy in the satellite context.",
+    "authors": [
+      "Kai Zhang",
+      "Jin Sun",
+      "Noah Snavely"
+    ],
+    "published": "2019-10-07T18:14:28Z",
+    "pdf_url": "https://arxiv.org/pdf/1910.02989v2",
+    "local_path": "data\\raw_pdfs\\1910.02989v2.pdf"
+  },
+  {
+    "arxiv_id": "2604.21032v1",
+    "title": "Unlocking Multi-Spectral Data for Multi-Modal Models with Guided Inputs and Chain-of-Thought Reasoning",
+    "summary": "Multi-spectral imagery is a valuable input signal for Remote Sensing applications, such as land-use and land-cover classification and environmental monitoring. However, generalist Large Multi-modal Models (LMMs) are typically trained on RGB images, limiting their applicability to the RGB domain. At the same time, training multi-spectral multi-modal models is expensive and produces uniquely specialized models. To address this, we propose a novel training-free approach that introduces multi-spectral data within the inference pipeline of standard RGB-only LMMs, allowing large gains in performance. Our approach leverages the LMMs' understanding of the visual space by adapting non-RGB inputs to that space and injecting domain-specific information and Chain-of-Thought reasoning as instructions. We demonstrate this with the Gemini 2.5 model and observe strong Zero-Shot performance gains on popular Remote Sensing benchmarks. These results highlight the potential for geospatial professionals to leverage powerful generalist models for specialized sensor inputs, benefiting from rich reasoning capabilities grounded in specialized data.",
+    "authors": [
+      "Dahun Kim",
+      "Ganesh Satish Mallya",
+      "Anelia Angelova"
+    ],
+    "published": "2026-04-22T19:23:52Z",
+    "pdf_url": "https://arxiv.org/pdf/2604.21032v1",
+    "local_path": "data\\raw_pdfs\\2604.21032v1.pdf"
+  },
+  {
+    "arxiv_id": "2507.12845v1",
+    "title": "SEMT: Static-Expansion-Mesh Transformer Network Architecture for Remote Sensing Image Captioning",
+    "summary": "Image captioning has emerged as a crucial task in the intersection of computer vision and natural language processing, enabling automated generation of descriptive text from visual content. In the context of remote sensing, image captioning plays a significant role in interpreting vast and complex satellite imagery, aiding applications such as environmental monitoring, disaster assessment, and urban planning. This motivates us, in this paper, to present a transformer based network architecture for remote sensing image captioning (RSIC) in which multiple techniques of Static Expansion, Memory-Augmented Self-Attention, Mesh Transformer are evaluated and integrated. We evaluate our proposed models using two benchmark remote sensing image datasets of UCM-Caption and NWPU-Caption. Our best model outperforms the state-of-the-art systems on most of evaluation metrics, which demonstrates potential to apply for real-life remote sensing image systems.",
+    "authors": [
+      "Khang Truong",
+      "Lam Pham",
+      "Hieu Tang",
+      "Jasmin Lampert",
+      "Martin Boyer",
+      "Son Phan",
+      "Truong Nguyen"
+    ],
+    "published": "2025-07-17T07:11:01Z",
+    "pdf_url": "https://arxiv.org/pdf/2507.12845v1",
+    "local_path": "data\\raw_pdfs\\2507.12845v1.pdf"
+  },
+  {
+    "arxiv_id": "1706.03424v2",
+    "title": "PatternNet: A Benchmark Dataset for Performance Evaluation of Remote Sensing Image Retrieval",
+    "summary": "Remote sensing image retrieval(RSIR), which aims to efficiently retrieve data of interest from large collections of remote sensing data, is a fundamental task in remote sensing. Over the past several decades, there has been significant effort to extract powerful feature representations for this task since the retrieval performance depends on the representative strength of the features. Benchmark datasets are also critical for developing, evaluating, and comparing RSIR approaches. Current benchmark datasets are deficient in that 1) they were originally collected for land use/land cover classification and not image retrieval, 2) they are relatively small in terms of the number of classes as well the number of sample images per class, and 3) the retrieval performance has saturated. These limitations have severely restricted the development of novel feature representations for RSIR, particularly the recent deep-learning based features which require large amounts of training data. We therefore present in this paper, a new large-scale remote sensing dataset termed \"PatternNet\" that was collected specifically for RSIR. PatternNet was collected from high-resolution imagery and contains 38 classes with 800 images per class. We also provide a thorough review of RSIR approaches ranging from traditional handcrafted feature based methods to recent deep learning based ones. We evaluate over 35 methods to establish extensive baseline results for future RSIR research using the PatternNet benchmark.",
+    "authors": [
+      "Weixun Zhou",
+      "Shawn Newsam",
+      "Congmin Li",
+      "Zhenfeng Shao"
+    ],
+    "published": "2017-06-11T23:45:07Z",
+    "pdf_url": "https://arxiv.org/pdf/1706.03424v2",
+    "local_path": "data\\raw_pdfs\\1706.03424v2.pdf"
+  },
+  {
+    "arxiv_id": "2503.22081v1",
+    "title": "A Survey on Remote Sensing Foundation Models: From Vision to Multimodality",
+    "summary": "The rapid advancement of remote sensing foundation models, particularly vision and multimodal models, has significantly enhanced the capabilities of intelligent geospatial data interpretation. These models combine various data modalities, such as optical, radar, and LiDAR imagery, with textual and geographic information, enabling more comprehensive analysis and understanding of remote sensing data. The integration of multiple modalities allows for improved performance in tasks like object detection, land cover classification, and change detection, which are often challenged by the complex and heterogeneous nature of remote sensing data. However, despite these advancements, several challenges remain. The diversity in data types, the need for large-scale annotated datasets, and the complexity of multimodal fusion techniques pose significant obstacles to the effective deployment of these models. Moreover, the computational demands of training and fine-tuning multimodal models require significant resources, further complicating their practical application in remote sensing image interpretation tasks. This paper provides a comprehensive review of the state-of-the-art in vision and multimodal foundation models for remote sensing, focusing on their architecture, training methods, datasets and application scenarios. We discuss the key challenges these models face, such as data alignment, cross-modal transfer learning, and scalability, while also identifying emerging research directions aimed at overcoming these limitations. Our goal is to provide a clear understanding of the current landscape of remote sensing foundation models and inspire future research that can push the boundaries of what these models can achieve in real-world applications. The list of resources collected by the paper can be found in the https://github.com/IRIP-BUAA/A-Review-for-remote-sensing-vision-language-models.",
+    "authors": [
+      "Ziyue Huang",
+      "Hongxi Yan",
+      "Qiqi Zhan",
+      "Shuai Yang",
+      "Mingming Zhang",
+      "Chenkai Zhang",
+      "YiMing Lei",
+      "Zeming Liu",
+      "Qingjie Liu",
+      "Yunhong Wang"
+    ],
+    "published": "2025-03-28T01:57:35Z",
+    "pdf_url": "https://arxiv.org/pdf/2503.22081v1",
+    "local_path": "data\\raw_pdfs\\2503.22081v1.pdf"
+  },
+  {
+    "arxiv_id": "1704.04055v1",
+    "title": "Land Cover Classification via Multi-temporal Spatial Data by Recurrent Neural Networks",
+    "summary": "Nowadays, modern earth observation programs produce huge volumes of satellite images time series (SITS) that can be useful to monitor geographical areas through time. How to efficiently analyze such kind of information is still an open question in the remote sensing field. Recently, deep learning methods proved suitable to deal with remote sensing data mainly for scene classification (i.e. Convolutional Neural Networks - CNNs - on single images) while only very few studies exist involving temporal deep learning approaches (i.e Recurrent Neural Networks - RNNs) to deal with remote sensing time series. In this letter we evaluate the ability of Recurrent Neural Networks, in particular the Long-Short Term Memory (LSTM) model, to perform land cover classification considering multi-temporal spatial data derived from a time series of satellite images. We carried out experiments on two different datasets considering both pixel-based and object-based classification. The obtained results show that Recurrent Neural Networks are competitive compared to state-of-the-art classifiers, and may outperform classical approaches in presence of low represented and/or highly mixed classes. We also show that using the alternative feature representation generated by LSTM can improve the performances of standard classifiers.",
+    "authors": [
+      "Dino Ienco",
+      "Raffaele Gaetano",
+      "Claire Dupaquier",
+      "Pierre Maurel"
+    ],
+    "published": "2017-04-13T09:47:12Z",
+    "pdf_url": "https://arxiv.org/pdf/1704.04055v1",
+    "local_path": "data\\raw_pdfs\\1704.04055v1.pdf"
+  },
+  {
+    "arxiv_id": "2107.12469v3",
+    "title": "SaRNet: A Dataset for Deep Learning Assisted Search and Rescue with Satellite Imagery",
+    "summary": "Access to high resolution satellite imagery has dramatically increased in recent years as several new constellations have entered service. High revisit frequencies as well as improved resolution has widened the use cases of satellite imagery to areas such as humanitarian relief and even Search and Rescue (SaR). We propose a novel remote sensing object detection dataset for deep learning assisted SaR. This dataset contains only small objects that have been identified as potential targets as part of a live SaR response. We evaluate the application of popular object detection models to this dataset as a baseline to inform further research. We also propose a novel object detection metric, specifically designed to be used in a deep learning assisted SaR setting.",
+    "authors": [
+      "Michael Thoreau",
+      "Frazer Wilson"
+    ],
+    "published": "2021-07-26T20:52:36Z",
+    "pdf_url": "https://arxiv.org/pdf/2107.12469v3",
+    "local_path": "data\\raw_pdfs\\2107.12469v3.pdf"
+  },
+  {
+    "arxiv_id": "2606.17222v1",
+    "title": "Quantum Enchanced Multi-Scale CNN with Bi-directional Mamba for Crop Field Analysis",
+    "summary": "Hyperspectral image (HSI) crop analysis is essential for precision agriculture because it captures rich spectral and spatial information for accurate crop monitoring and assessment. However, HSI classification remains challenging due to high spectral dimensionality, spatial complexity, class imbalance, and limited labeled samples. To address these challenges, this paper proposes a BiSpectral Mamba-based framework that combines multi-scale convolutional feature extraction, spectral attention, bidirectional state-space modeling, and quantum-inspired learning. A multi-scale CNN backbone first extracts hierarchical spatial-spectral representations through feature fusion across multiple resolutions. A spectral attention mechanism then emphasizes informative bands while suppressing redundant and noisy channels. The refined features are processed by a BiSpectral Mamba module that captures long-range dependencies in both forward and backward directions by modeling hyperspectral feature maps as sequential tokens. In addition, class-weighted optimization and feature fusion strategies are incorporated to improve training stability and mitigate class imbalance. Experimental evaluation on the UAVHSI-Crop dataset demonstrates the effectiveness of the proposed framework, achieving an overall accuracy of 84.83%. The results show that integrating convolutional, attention-based, and state-space modeling components enables robust spatial-spectral feature learning for crop classification. The proposed framework also shows potential for broader agricultural and remote sensing applications, including crop disease detection, yield prediction, and soil moisture estimation, while highlighting the effectiveness of structured state-space and quantum-inspired architectures for hyperspectral image analysis.",
+    "authors": [
+      "Mohammad Salman Khan",
+      "Ehsan Atoofian",
+      "Saad B. Ahmed"
+    ],
+    "published": "2026-06-15T19:11:09Z",
+    "pdf_url": "https://arxiv.org/pdf/2606.17222v1",
+    "local_path": "data\\raw_pdfs\\2606.17222v1.pdf"
+  },
+  {
+    "arxiv_id": "2402.16001v2",
+    "title": "Cross-Resolution Land Cover Classification Using Outdated Products and Transformers",
+    "summary": "Large-scale high-resolution land cover classification is a prerequisite for constructing Earth system models and addressing ecological and resource issues. Advancements in satellite sensor technology have led to an improvement in spatial resolution and wider coverage areas. Nevertheless, the lack of high-resolution labeled data is still a challenge, hindering the largescale application of land cover classification methods. In this paper, we propose a Transformerbased weakly supervised method for cross-resolution land cover classification using outdated data. First, to capture long-range dependencies without missing the fine-grained details of objects, we propose a U-Net-like Transformer based on a reverse difference mechanism (RDM) using dynamic sparse attention. Second, we propose an anti-noise loss calculation (ANLC) module based on optimal transport (OT). Anti-noise loss calculation identifies confident areas (CA) and vague areas (VA) based on the OT matrix, which relieves the impact of noises in outdated land cover products. By introducing a weakly supervised loss with weights and employing unsupervised loss, the RDM-based U-Net-like Transformer was trained. Remote sensing images with 1 m resolution and the corresponding ground-truths of six states in the United States were employed to validate the performance of the proposed method. The experiments utilized outdated land cover products with 30 m resolution from 2013 as training labels, and produced land cover maps with 1 m resolution from 2017. The results show the superiority of the proposed method compared to state-of-the-art methods. The code is available at https://github.com/yu-ni1989/ANLC-Former.",
+    "authors": [
+      "Huan Ni",
+      "Yubin Zhao",
+      "Haiyan Guan",
+      "Cheng Jiang",
+      "Yongshi Jie",
+      "Xing Wang",
+      "Yiyang Shen"
+    ],
+    "published": "2024-02-25T06:18:41Z",
+    "pdf_url": "https://arxiv.org/pdf/2402.16001v2",
+    "local_path": "data\\raw_pdfs\\2402.16001v2.pdf"
+  },
+  {
+    "arxiv_id": "2006.11391v1",
+    "title": "Computer Vision with Deep Learning for Plant Phenotyping in Agriculture: A Survey",
+    "summary": "In light of growing challenges in agriculture with ever growing food demand across the world, efficient crop management techniques are necessary to increase crop yield. Precision agriculture techniques allow the stakeholders to make effective and customized crop management decisions based on data gathered from monitoring crop environments. Plant phenotyping techniques play a major role in accurate crop monitoring. Advancements in deep learning have made previously difficult phenotyping tasks possible. This survey aims to introduce the reader to the state of the art research in deep plant phenotyping.",
+    "authors": [
+      "Akshay L Chandra",
+      "Sai Vikas Desai",
+      "Wei Guo",
+      "Vineeth N Balasubramanian"
+    ],
+    "published": "2020-06-18T14:21:19Z",
+    "pdf_url": "https://arxiv.org/pdf/2006.11391v1",
+    "local_path": "data\\raw_pdfs\\2006.11391v1.pdf"
+  },
+  {
+    "arxiv_id": "2306.15836v1",
+    "title": "A generic self-supervised learning (SSL) framework for representation learning from spectra-spatial feature of unlabeled remote sensing imagery",
+    "summary": "Remote sensing data has been widely used for various Earth Observation (EO) missions such as land use and cover classification, weather forecasting, agricultural management, and environmental monitoring. Most existing remote sensing data-based models are based on supervised learning that requires large and representative human-labelled data for model training, which is costly and time-consuming. Recently, self-supervised learning (SSL) enables the models to learn a representation from orders of magnitude more unlabelled data. This representation has been proven to boost the performance of downstream tasks and has potential for remote sensing applications. The success of SSL is heavily dependent on a pre-designed pretext task, which introduces an inductive bias into the model from a large amount of unlabelled data. Since remote sensing imagery has rich spectral information beyond the standard RGB colour space, the pretext tasks established in computer vision based on RGB images may not be straightforward to be extended to the multi/hyperspectral domain. To address this challenge, this work has designed a novel SSL framework that is capable of learning representation from both spectra-spatial information of unlabelled data. The framework contains two novel pretext tasks for object-based and pixel-based remote sensing data analysis methods, respectively. Through two typical downstream tasks evaluation (a multi-label land cover classification task on Sentienl-2 multispectral datasets and a ground soil parameter retrieval task on hyperspectral datasets), the results demonstrate that the representation obtained through the proposed SSL achieved a significant improvement in model performance.",
+    "authors": [
+      "Xin Zhang",
+      "Liangxiu Han"
+    ],
+    "published": "2023-06-27T23:50:43Z",
+    "pdf_url": "https://arxiv.org/pdf/2306.15836v1",
+    "local_path": "data\\raw_pdfs\\2306.15836v1.pdf"
+  },
+  {
+    "arxiv_id": "2404.02877v4",
+    "title": "FlightScope: An Experimental Comparative Review of Aircraft Detection Algorithms in Satellite Imagery",
+    "summary": "Object detection in remotely sensed satellite pictures is fundamental in many fields such as biophysical, and environmental monitoring. While deep learning algorithms are constantly evolving, they have been mostly implemented and tested on popular ground-based taken photos. This paper critically evaluates and compares a suite of advanced object detection algorithms customized for the task of identifying aircraft within satellite imagery. Using the large HRPlanesV2 dataset, together with a rigorous validation with the GDIT dataset, this research encompasses an array of methodologies including YOLO versions 5 and 8, Faster RCNN, CenterNet, RetinaNet, RTMDet, and DETR, all trained from scratch. This exhaustive training and validation study reveal YOLOv5 as the preeminent model for the specific case of identifying airplanes from remote sensing data, showcasing high precision and adaptability across diverse imaging conditions. This research highlight the nuanced performance landscapes of these algorithms, with YOLOv5 emerging as a robust solution for aerial object detection, underlining its importance through superior mean average precision, Recall, and Intersection over Union scores. The findings described here underscore the fundamental role of algorithm selection aligned with the specific demands of satellite imagery analysis and extend a comprehensive framework to evaluate model efficacy. The benchmark toolkit and codes, available via https://github.com/toelt-llc/FlightScope_Bench, aims to further exploration and innovation in the realm of remote sensing object detection, paving the way for improved analytical methodologies in satellite imagery applications.",
+    "authors": [
+      "Safouane El Ghazouali",
+      "Arnaud Gucciardi",
+      "Francesca Venturini",
+      "Nicola Venturi",
+      "Michael Rueegsegger",
+      "Umberto Michelucci"
+    ],
+    "published": "2024-04-03T17:24:27Z",
+    "pdf_url": "https://arxiv.org/pdf/2404.02877v4",
+    "local_path": "data\\raw_pdfs\\2404.02877v4.pdf"
+  },
+  {
+    "arxiv_id": "2405.18900v1",
+    "title": "Spectral Fidelity and Spatial Enhancement: An Assessment and Cascading of Pan-Sharpening Techniques for Satellite Imagery",
+    "summary": "This research presents a comprehensive assessment of pan-sharpening techniques for satellite imagery, focusing on the critical aspects of spectral fidelity and spatial enhancement. Motivated by the need for informed algorithm selection in remote sensing, A novel cascaded and structured evaluation framework has been proposed with a detailed comparative analysis of existing methodologies. The research findings underscore the intricate trade-offs between spectral accuracy of about 88\\% with spatial resolution enhancement. The research sheds light on the practical implications of pan-sharpening and emphasizes the significance of both spectral and spatial aspects in remote sensing applications. Various pan-sharpening algorithms were systematically employed to provide a holistic view of their performance, contributing to a deeper understanding of their capabilities and limitations.",
+    "authors": [
+      "Abdul Aziz A. B",
+      "A. B Abdul Rahim"
+    ],
+    "published": "2024-05-29T09:00:48Z",
+    "pdf_url": "https://arxiv.org/pdf/2405.18900v1",
+    "local_path": "data\\raw_pdfs\\2405.18900v1.pdf"
+  },
+  {
+    "arxiv_id": "2310.00022v4",
+    "title": "CtxMIM: Context-Enhanced Masked Image Modeling for Remote Sensing Image Understanding",
+    "summary": "Learning representations through self-supervision on unlabeled data has proven highly effective for understanding diverse images. However, remote sensing images often have complex and densely populated scenes with multiple land objects and no clear foreground objects. This intrinsic property generates high object density, resulting in false positive pairs or missing contextual information in self-supervised learning. To address these problems, we propose a context-enhanced masked image modeling method (CtxMIM), a simple yet efficient MIM-based self-supervised learning for remote sensing image understanding. CtxMIM formulates original image patches as a reconstructive template and employs a Siamese framework to operate on two sets of image patches. A context-enhanced generative branch is introduced to provide contextual information through context consistency constraints in the reconstruction. With the simple and elegant design, CtxMIM encourages the pre-training model to learn object-level or pixel-level features on a large-scale dataset without specific temporal or geographical constraints. Finally, extensive experiments show that features learned by CtxMIM outperform fully supervised and state-of-the-art self-supervised learning methods on various downstream tasks, including land cover classification, semantic segmentation, object detection, and instance segmentation. These results demonstrate that CtxMIM learns impressive remote sensing representations with high generalization and transferability. Code and data will be made public available.",
+    "authors": [
+      "Mingming Zhang",
+      "Qingjie Liu",
+      "Yunhong Wang"
+    ],
+    "published": "2023-09-28T18:04:43Z",
+    "pdf_url": "https://arxiv.org/pdf/2310.00022v4",
+    "local_path": "data\\raw_pdfs\\2310.00022v4.pdf"
+  },
+  {
+    "arxiv_id": "2509.23310v3",
+    "title": "Balanced Diffusion-Guided Fusion for Multimodal Remote Sensing Classification",
+    "summary": "Deep learning-based techniques for the analysis of multimodal remote sensing data have become popular due to their ability to effectively integrate complementary spatial, spectral, and structural information from different sensors. Recently, denoising diffusion probabilistic models (DDPMs) have attracted attention in the remote sensing community due to their powerful ability to capture robust and complex spatial-spectral distributions. However, pre-training multimodal DDPMs may result in modality imbalance, and effectively leveraging diffusion features to guide complementary diversity feature extraction remains an open question. To address these issues, this paper proposes a balanced diffusion-guided fusion (BDGF) framework that leverages multimodal diffusion features to guide a multi-branch network for land-cover classification. Specifically, we propose an adaptive modality masking strategy to encourage the DDPMs to obtain a modality-balanced rather than spectral image-dominated data distribution. Subsequently, these diffusion features hierarchically guide feature extraction among CNN, Mamba, and transformer networks by integrating feature fusion, group channel attention, and cross-attention mechanisms. Finally, a mutual learning strategy is developed to enhance inter-branch collaboration by aligning the probability entropy and feature similarity of individual subnetworks. Extensive experiments on four multimodal remote sensing datasets demonstrate that the proposed method achieves superior classification performance. The code is available at https://github.com/HaoLiu-XDU/BDGF.",
+    "authors": [
+      "Hao Liu",
+      "Yongjie Zheng",
+      "Yuhan Kang",
+      "Mingyang Zhang",
+      "Maoguo Gong",
+      "Lorenzo Bruzzone"
+    ],
+    "published": "2025-09-27T13:55:32Z",
+    "pdf_url": "https://arxiv.org/pdf/2509.23310v3",
+    "local_path": "data\\raw_pdfs\\2509.23310v3.pdf"
+  },
+  {
+    "arxiv_id": "1806.03510v2",
+    "title": "Feature Pyramid Network for Multi-Class Land Segmentation",
+    "summary": "Semantic segmentation is in-demand in satellite imagery processing. Because of the complex environment, automatic categorization and segmentation of land cover is a challenging problem. Solving it can help to overcome many obstacles in urban planning, environmental engineering or natural landscape monitoring. In this paper, we propose an approach for automatic multi-class land segmentation based on a fully convolutional neural network of feature pyramid network (FPN) family. This network is consisted of pre-trained on ImageNet Resnet50 encoder and neatly developed decoder. Based on validation results, leaderboard score and our own experience this network shows reliable results for the DEEPGLOBE - CVPR 2018 land cover classification sub-challenge. Moreover, this network moderately uses memory that allows using GTX 1080 or 1080 TI video cards to perform whole training and makes pretty fast predictions.",
+    "authors": [
+      "Selim S. Seferbekov",
+      "Vladimir I. Iglovikov",
+      "Alexander V. Buslaev",
+      "Alexey A. Shvets"
+    ],
+    "published": "2018-06-09T17:30:30Z",
+    "pdf_url": "https://arxiv.org/pdf/1806.03510v2",
+    "local_path": "data\\raw_pdfs\\1806.03510v2.pdf"
+  },
+  {
+    "arxiv_id": "2003.13502v2",
+    "title": "An Open-source Tool for Hyperspectral Image Augmentation in Tensorflow",
+    "summary": "Satellite imagery allows a plethora of applications ranging from weather forecasting to land surveying. The rapid development of computer vision systems could open new horizons to the utilization of satellite data due to the abundance of large volumes of data. However, current state-of-the-art computer vision systems mainly cater to applications that mainly involve natural images. While useful, those images exhibit a different distribution from satellite images in addition to having more spectral channels. This allows the use of pretrained deep learning models only in a subset of spectral channels that are equivalent to natural images thus discarding valuable information from other spectral channels. This calls for research effort to optimize deep learning models for satellite imagery to enable the assessment of their utility in the domain of remote sensing. Tensorflow tool allows for rapid prototyping and testing of deep learning models, however, its built-in image generator is designed to handle a maximum of four spectral channels. This manuscript introduces an open-source tool that allows the implementation of image augmentation for hyperspectral images in Tensorflow. Given how accessible and easy-to-use Tensorflow is, this tool would provide many researchers with the means to implement, test, and deploy deep learning models for remote sensing applications.",
+    "authors": [
+      "Mohamed Abdelhack"
+    ],
+    "published": "2020-03-30T14:28:12Z",
+    "pdf_url": "https://arxiv.org/pdf/2003.13502v2",
+    "local_path": "data\\raw_pdfs\\2003.13502v2.pdf"
+  },
+  {
+    "arxiv_id": "2404.07607v1",
+    "title": "Automatic Detection of Dark Ship-to-Ship Transfers using Deep Learning and Satellite Imagery",
+    "summary": "Despite extensive research into ship detection via remote sensing, no studies identify ship-to-ship transfers in satellite imagery. Given the importance of transshipment in illicit shipping practices, this is a significant gap. In what follows, I train a convolutional neural network to accurately detect 4 different types of cargo vessel and two different types of Ship-to-Ship transfer in PlanetScope satellite imagery. I then elaborate a pipeline for the automatic detection of suspected illicit ship-to-ship transfers by cross-referencing satellite detections with vessel borne GPS data. Finally, I apply this method to the Kerch Strait between Ukraine and Russia to identify over 400 dark transshipment events since 2022.",
+    "authors": [
+      "Ollie Ballinger"
+    ],
+    "published": "2024-04-11T09:50:05Z",
+    "pdf_url": "https://arxiv.org/pdf/2404.07607v1",
+    "local_path": "data\\raw_pdfs\\2404.07607v1.pdf"
+  },
+  {
+    "arxiv_id": "2111.03845v1",
+    "title": "Multi-modal land cover mapping of remote sensing images using pyramid attention and gated fusion networks",
+    "summary": "Multi-modality data is becoming readily available in remote sensing (RS) and can provide complementary information about the Earth's surface. Effective fusion of multi-modal information is thus important for various applications in RS, but also very challenging due to large domain differences, noise, and redundancies. There is a lack of effective and scalable fusion techniques for bridging multiple modality encoders and fully exploiting complementary information. To this end, we propose a new multi-modality network (MultiModNet) for land cover mapping of multi-modal remote sensing data based on a novel pyramid attention fusion (PAF) module and a gated fusion unit (GFU). The PAF module is designed to efficiently obtain rich fine-grained contextual representations from each modality with a built-in cross-level and cross-view attention fusion mechanism, and the GFU module utilizes a novel gating mechanism for early merging of features, thereby diminishing hidden redundancies and noise. This enables supplementary modalities to effectively extract the most valuable and complementary information for late feature fusion. Extensive experiments on two representative RS benchmark datasets demonstrate the effectiveness, robustness, and superiority of the MultiModNet for multi-modal land cover classification.",
+    "authors": [
+      "Qinghui Liu",
+      "Michael Kampffmeyer",
+      "Robert Jenssen",
+      "Arnt-B\u00f8rre Salberg"
+    ],
+    "published": "2021-11-06T10:01:01Z",
+    "pdf_url": "https://arxiv.org/pdf/2111.03845v1",
+    "local_path": "data\\raw_pdfs\\2111.03845v1.pdf"
+  },
+  {
+    "arxiv_id": "2411.05826v2",
+    "title": "From Pixels to Prose: Advancing Multi-Modal Language Models for Remote Sensing",
+    "summary": "Remote sensing has evolved from simple image acquisition to complex systems capable of integrating and processing visual and textual data. This review examines the development and application of multi-modal language models (MLLMs) in remote sensing, focusing on their ability to interpret and describe satellite imagery using natural language. We cover the technical underpinnings of MLLMs, including dual-encoder architectures, Transformer models, self-supervised and contrastive learning, and cross-modal integration. The unique challenges of remote sensing data--varying spatial resolutions, spectral richness, and temporal changes--are analyzed for their impact on MLLM performance. Key applications such as scene description, object detection, change detection, text-to-image retrieval, image-to-text generation, and visual question answering are discussed to demonstrate their relevance in environmental monitoring, urban planning, and disaster response. We review significant datasets and resources supporting the training and evaluation of these models. Challenges related to computational demands, scalability, data quality, and domain adaptation are highlighted. We conclude by proposing future research directions and technological advancements to further enhance MLLM utility in remote sensing.",
+    "authors": [
+      "Xintian Sun",
+      "Benji Peng",
+      "Charles Zhang",
+      "Fei Jin",
+      "Qian Niu",
+      "Junyu Liu",
+      "Keyu Chen",
+      "Ming Li",
+      "Pohsun Feng",
+      "Ziqian Bi",
+      "Ming Liu",
+      "Xinyuan Song",
+      "Yichao Zhang"
+    ],
+    "published": "2024-11-05T12:14:22Z",
+    "pdf_url": "https://arxiv.org/pdf/2411.05826v2",
+    "local_path": "data\\raw_pdfs\\2411.05826v2.pdf"
+  },
+  {
+    "arxiv_id": "1906.11981v1",
+    "title": "Convolution Based Spectral Partitioning Architecture for Hyperspectral Image Classification",
+    "summary": "Hyperspectral images (HSIs) can distinguish materials with high number of spectral bands, which is widely adopted in remote sensing applications and benefits in high accuracy land cover classifications. However, HSIs processing are tangled with the problem of high dimensionality and limited amount of labelled data. To address these challenges, this paper proposes a deep learning architecture using three dimensional convolutional neural networks with spectral partitioning to perform effective feature extraction. We conduct experiments using Indian Pines and Salinas scenes acquired by NASA Airborne Visible/Infra-Red Imaging Spectrometer. In comparison to prior results, our architecture shows competitive performance for classification results over current methods.",
+    "authors": [
+      "Ringo S. W. Chu",
+      "Ho-Cheung Ng",
+      "Xiwei Wang",
+      "Wayne Luk"
+    ],
+    "published": "2019-06-27T22:06:15Z",
+    "pdf_url": "https://arxiv.org/pdf/1906.11981v1",
+    "local_path": "data\\raw_pdfs\\1906.11981v1.pdf"
+  },
+  {
+    "arxiv_id": "2202.10974v3",
+    "title": "The Winning Solution to the iFLYTEK Challenge 2021 Cultivated Land Extraction from High-Resolution Remote Sensing Image",
+    "summary": "Extracting cultivated land accurately from high-resolution remote images is a basic task for precision agriculture. This report introduces our solution to the iFLYTEK challenge 2021 cultivated land extraction from high-resolution remote sensing image. The challenge requires segmenting cultivated land objects in very high-resolution multispectral remote sensing images. We established a highly effective and efficient pipeline to solve this problem. We first divided the original images into small tiles and separately performed instance segmentation on each tile. We explored several instance segmentation algorithms that work well on natural images and developed a set of effective methods that are applicable to remote sensing images. Then we merged the prediction results of all small tiles into seamless, continuous segmentation results through our proposed overlap-tile fusion strategy. We achieved the first place among 486 teams in the challenge.",
+    "authors": [
+      "Zhen Zhao",
+      "Yuqiu Liu",
+      "Gang Zhang",
+      "Liang Tang",
+      "Xiaolin Hu"
+    ],
+    "published": "2022-02-22T15:28:59Z",
+    "pdf_url": "https://arxiv.org/pdf/2202.10974v3",
+    "local_path": "data\\raw_pdfs\\2202.10974v3.pdf"
+  },
+  {
+    "arxiv_id": "2604.12772v2",
+    "title": "A Multi-Agent Feedback System for Detecting and Describing News Events in Satellite Imagery",
+    "summary": "Changes in satellite imagery often occur over multiple time steps. Despite the emergence of bi-temporal change captioning datasets, there is a lack of multi-temporal event captioning datasets (at least two images per sequence) in remote sensing. This gap exists because (1) searching for visible events in satellite imagery and (2) labeling multi-temporal sequences require significant time and labor. To address these challenges, we present SkyScraper, an iterative multi-agent workflow that geocodes news articles and synthesizes captions for corresponding satellite image sequences. Our experiments show that SkyScraper successfully finds 5x more events than traditional geocoding methods, demonstrating that agentic feedback is an effective strategy for surfacing new multi-temporal events in satellite imagery. We apply our framework to a large database of global news articles, curating a new multi-temporal captioning dataset with 5,000 sequences. By automatically identifying imagery related to news events, our work also supports journalism and reporting efforts.",
+    "authors": [
+      "Madeline Anderson",
+      "Mikhail Klassen",
+      "Ash Hoover",
+      "Kerri Cahoy"
+    ],
+    "published": "2026-04-14T14:12:19Z",
+    "pdf_url": "https://arxiv.org/pdf/2604.12772v2",
+    "local_path": "data\\raw_pdfs\\2604.12772v2.pdf"
+  },
+  {
+    "arxiv_id": "0802.2411v1",
+    "title": "Multiclass Approaches for Support Vector Machine Based Land Cover Classification",
+    "summary": "SVMs were initially developed to perform binary classification; though, applications of binary classification are very limited. Most of the practical applications involve multiclass classification, especially in remote sensing land cover classification. A number of methods have been proposed to implement SVMs to produce multiclass classification. A number of methods to generate multiclass SVMs from binary SVMs have been proposed by researchers and is still a continuing research topic. This paper compares the performance of six multi-class approaches to solve classification problem with remote sensing data in term of classification accuracy and computational cost. One vs. one, one vs. rest, Directed Acyclic Graph (DAG), and Error Corrected Output Coding (ECOC) based multiclass approaches creates many binary classifiers and combines their results to determine the class label of a test pixel. Another catogery of multi class approach modify the binary class objective function and allows simultaneous computation of multiclass classification by solving a single optimisation problem. Results from this study conclude the usefulness of One vs. One multi class approach in term of accuracy and computational cost over other multi class approaches.",
+    "authors": [
+      "Mahesh Pal"
+    ],
+    "published": "2008-02-18T03:47:45Z",
+    "pdf_url": "https://arxiv.org/pdf/0802.2411v1",
+    "local_path": "data\\raw_pdfs\\0802.2411v1.pdf"
+  },
+  {
+    "arxiv_id": "2105.10196v1",
+    "title": "Multimodal Remote Sensing Benchmark Datasets for Land Cover Classification with A Shared and Specific Feature Learning Model",
+    "summary": "As remote sensing (RS) data obtained from different sensors become available largely and openly, multimodal data processing and analysis techniques have been garnering increasing interest in the RS and geoscience community. However, due to the gap between different modalities in terms of imaging sensors, resolutions, and contents, embedding their complementary information into a consistent, compact, accurate, and discriminative representation, to a great extent, remains challenging. To this end, we propose a shared and specific feature learning (S2FL) model. S2FL is capable of decomposing multimodal RS data into modality-shared and modality-specific components, enabling the information blending of multi-modalities more effectively, particularly for heterogeneous data sources. Moreover, to better assess multimodal baselines and the newly-proposed S2FL model, three multimodal RS benchmark datasets, i.e., Houston2013 -- hyperspectral and multispectral data, Berlin -- hyperspectral and synthetic aperture radar (SAR) data, Augsburg -- hyperspectral, SAR, and digital surface model (DSM) data, are released and used for land cover classification. Extensive experiments conducted on the three datasets demonstrate the superiority and advancement of our S2FL model in the task of land cover classification in comparison with previously-proposed state-of-the-art baselines. Furthermore, the baseline codes and datasets used in this paper will be made available freely at https://github.com/danfenghong/ISPRS_S2FL.",
+    "authors": [
+      "Danfeng Hong",
+      "Jingliang Hu",
+      "Jing Yao",
+      "Jocelyn Chanussot",
+      "Xiao Xiang Zhu"
+    ],
+    "published": "2021-05-21T08:14:21Z",
+    "pdf_url": "https://arxiv.org/pdf/2105.10196v1",
+    "local_path": "data\\raw_pdfs\\2105.10196v1.pdf"
+  },
+  {
+    "arxiv_id": "2203.06041v1",
+    "title": "Embedding Earth: Self-supervised contrastive pre-training for dense land cover classification",
+    "summary": "In training machine learning models for land cover semantic segmentation there is a stark contrast between the availability of satellite imagery to be used as inputs and ground truth data to enable supervised learning. While thousands of new satellite images become freely available on a daily basis, getting ground truth data is still very challenging, time consuming and costly. In this paper we present Embedding Earth a self-supervised contrastive pre-training method for leveraging the large availability of satellite imagery to improve performance on downstream dense land cover classification tasks. Performing an extensive experimental evaluation spanning four countries and two continents we use models pre-trained with our proposed method as initialization points for supervised land cover semantic segmentation and observe significant improvements up to 25% absolute mIoU. In every case tested we outperform random initialization, especially so when ground truth data are scarse. Through a series of ablation studies we explore the qualities of the proposed approach and find that learnt features can generalize between disparate regions opening up the possibility of using the proposed pre-training scheme as a replacement to random initialization for Earth observation tasks. Code will be uploaded soon at https://github.com/michaeltrs/DeepSatModels.",
+    "authors": [
+      "Michail Tarasiou",
+      "Stefanos Zafeiriou"
+    ],
+    "published": "2022-03-11T16:14:14Z",
+    "pdf_url": "https://arxiv.org/pdf/2203.06041v1",
+    "local_path": "data\\raw_pdfs\\2203.06041v1.pdf"
+  },
+  {
+    "arxiv_id": "2504.12112v1",
+    "title": "A Diffusion-Based Framework for Terrain-Aware Remote Sensing Image Reconstruction",
+    "summary": "Remote sensing imagery is essential for environmental monitoring, agricultural management, and disaster response. However, data loss due to cloud cover, sensor failures, or incomplete acquisition-especially in high-resolution and high-frequency tasks-severely limits satellite imagery's effectiveness. Traditional interpolation methods struggle with large missing areas and complex structures. Remote sensing imagery consists of multiple bands, each with distinct meanings, and ensuring consistency across bands is critical to avoid anomalies in the combined images. This paper proposes SatelliteMaker, a diffusion-based method that reconstructs missing data across varying levels of data loss while maintaining spatial, spectral, and temporal consistency. We also propose Digital Elevation Model (DEM) as a conditioning input and use tailored prompts to generate realistic images, making diffusion models applicable to quantitative remote sensing tasks. Additionally, we propose a VGG-Adapter module based on Distribution Loss, which reduces distribution discrepancy and ensures style consistency. Extensive experiments show that SatelliteMaker achieves state-of-the-art performance across multiple tasks.",
+    "authors": [
+      "Zhenyu Yu",
+      "Mohd Yamani Inda Idris",
+      "Pei Wang"
+    ],
+    "published": "2025-04-16T14:19:57Z",
+    "pdf_url": "https://arxiv.org/pdf/2504.12112v1",
+    "local_path": "data\\raw_pdfs\\2504.12112v1.pdf"
+  },
+  {
+    "arxiv_id": "2412.08536v1",
+    "title": "SenCLIP: Enhancing zero-shot land-use mapping for Sentinel-2 with ground-level prompting",
+    "summary": "Pre-trained vision-language models (VLMs), such as CLIP, demonstrate impressive zero-shot classification capabilities with free-form prompts and even show some generalization in specialized domains. However, their performance on satellite imagery is limited due to the underrepresentation of such data in their training sets, which predominantly consist of ground-level images. Existing prompting techniques for satellite imagery are often restricted to generic phrases like a satellite image of ..., limiting their effectiveness for zero-shot land-use and land-cover (LULC) mapping. To address these challenges, we introduce SenCLIP, which transfers CLIPs representation to Sentinel-2 imagery by leveraging a large dataset of Sentinel-2 images paired with geotagged ground-level photos from across Europe. We evaluate SenCLIP alongside other SOTA remote sensing VLMs on zero-shot LULC mapping tasks using the EuroSAT and BigEarthNet datasets with both aerial and ground-level prompting styles. Our approach, which aligns ground-level representations with satellite imagery, demonstrates significant improvements in classification accuracy across both prompt styles, opening new possibilities for applying free-form textual descriptions in zero-shot LULC mapping.",
+    "authors": [
+      "Pallavi Jain",
+      "Dino Ienco",
+      "Roberto Interdonato",
+      "Tristan Berchoux",
+      "Diego Marcos"
+    ],
+    "published": "2024-12-11T16:52:14Z",
+    "pdf_url": "https://arxiv.org/pdf/2412.08536v1",
+    "local_path": "data\\raw_pdfs\\2412.08536v1.pdf"
+  },
+  {
+    "arxiv_id": "2212.13613v1",
+    "title": "Deep Learning Models for River Classification at Sub-Meter Resolutions from Multispectral and Panchromatic Commercial Satellite Imagery",
+    "summary": "Remote sensing of the Earth's surface water is critical in a wide range of environmental studies, from evaluating the societal impacts of seasonal droughts and floods to the large-scale implications of climate change. Consequently, a large literature exists on the classification of water from satellite imagery. Yet, previous methods have been limited by 1) the spatial resolution of public satellite imagery, 2) classification schemes that operate at the pixel level, and 3) the need for multiple spectral bands. We advance the state-of-the-art by 1) using commercial imagery with panchromatic and multispectral resolutions of 30 cm and 1.2 m, respectively, 2) developing multiple fully convolutional neural networks (FCN) that can learn the morphological features of water bodies in addition to their spectral properties, and 3) FCN that can classify water even from panchromatic imagery. This study focuses on rivers in the Arctic, using images from the Quickbird, WorldView, and GeoEye satellites. Because no training data are available at such high resolutions, we construct those manually. First, we use the RGB, and NIR bands of the 8-band multispectral sensors. Those trained models all achieve excellent precision and recall over 90% on validation data, aided by on-the-fly preprocessing of the training data specific to satellite imagery. In a novel approach, we then use results from the multispectral model to generate training data for FCN that only require panchromatic imagery, of which considerably more is available. Despite the smaller feature space, these models still achieve a precision and recall of over 85%. We provide our open-source codes and trained model parameters to the remote sensing community, which paves the way to a wide range of environmental hydrology applications at vastly superior accuracies and 2 orders of magnitude higher spatial resolution than previously possible.",
+    "authors": [
+      "Joachim Moortgat",
+      "Ziwei Li",
+      "Michael Durand",
+      "Ian Howat",
+      "Bidhyananda Yadav",
+      "Chunli Dai"
+    ],
+    "published": "2022-12-27T20:56:34Z",
+    "pdf_url": "https://arxiv.org/pdf/2212.13613v1",
+    "local_path": "data\\raw_pdfs\\2212.13613v1.pdf"
+  },
+  {
+    "arxiv_id": "2501.02474v1",
+    "title": "Generalization-Enhanced Few-Shot Object Detection in Remote Sensing",
+    "summary": "Remote sensing object detection is particularly challenging due to the high resolution, multi-scale features, and diverse ground object characteristics inherent in satellite and UAV imagery. These challenges necessitate more advanced approaches for effective object detection in such environments. While deep learning methods have achieved remarkable success in remote sensing object detection, they typically rely on large amounts of labeled data. Acquiring sufficient labeled data, particularly for novel or rare objects, is both challenging and time-consuming in remote sensing scenarios, limiting the generalization capabilities of existing models. To address these challenges, few-shot learning (FSL) has emerged as a promising approach, aiming to enable models to learn new classes from limited labeled examples. Building on this concept, few-shot object detection (FSOD) specifically targets object detection challenges in data-limited conditions. However, the generalization capability of FSOD models, particularly in remote sensing, is often constrained by the complex and diverse characteristics of the objects present in such environments. In this paper, we propose the Generalization-Enhanced Few-Shot Object Detection (GE-FSOD) model to improve the generalization capability in remote sensing FSOD tasks. Our model introduces three key innovations: the Cross-Level Fusion Pyramid Attention Network (CFPAN) for enhanced multi-scale feature representation, the Multi-Stage Refinement Region Proposal Network (MRRPN) for more accurate region proposals, and the Generalized Classification Loss (GCL) for improved classification performance in few-shot scenarios. Extensive experiments on the DIOR and NWPU VHR-10 datasets show that our model achieves state-of-the-art performance for few-shot object detection in remote sensing.",
+    "authors": [
+      "Hui Lin",
+      "Nan Li",
+      "Pengjuan Yao",
+      "Kexin Dong",
+      "Yuhan Guo",
+      "Danfeng Hong",
+      "Ying Zhang",
+      "Congcong Wen"
+    ],
+    "published": "2025-01-05T08:12:25Z",
+    "pdf_url": "https://arxiv.org/pdf/2501.02474v1",
+    "local_path": "data\\raw_pdfs\\2501.02474v1.pdf"
+  },
+  {
+    "arxiv_id": "2508.07020v1",
+    "title": "TerraMAE: Learning Spatial-Spectral Representations from Hyperspectral Earth Observation Data via Adaptive Masked Autoencoders",
+    "summary": "Hyperspectral satellite imagery offers sub-30 m views of Earth in hundreds of contiguous spectral bands, enabling fine-grained mapping of soils, crops, and land cover. While self-supervised Masked Autoencoders excel on RGB and low-band multispectral data, they struggle to exploit the intricate spatial-spectral correlations in 200+ band hyperspectral images. We introduce TerraMAE, a novel HSI encoding framework specifically designed to learn highly representative spatial-spectral embeddings for diverse geospatial analyses. TerraMAE features an adaptive channel grouping strategy, based on statistical reflectance properties to capture spectral similarities, and an enhanced reconstruction loss function that incorporates spatial and spectral quality metrics. We demonstrate TerraMAE's effectiveness through superior spatial-spectral information preservation in high-fidelity image reconstruction. Furthermore, we validate its practical utility and the quality of its learned representations through strong performance on three key downstream geospatial tasks: crop identification, land cover classification, and soil texture prediction.",
+    "authors": [
+      "Tanjim Bin Faruk",
+      "Abdul Matin",
+      "Shrideep Pallickara",
+      "Sangmi Lee Pallickara"
+    ],
+    "published": "2025-08-09T15:32:22Z",
+    "pdf_url": "https://arxiv.org/pdf/2508.07020v1",
+    "local_path": "data\\raw_pdfs\\2508.07020v1.pdf"
+  },
+  {
+    "arxiv_id": "2307.14612v1",
+    "title": "GenCo: An Auxiliary Generator from Contrastive Learning for Enhanced Few-Shot Learning in Remote Sensing",
+    "summary": "Classifying and segmenting patterns from a limited number of examples is a significant challenge in remote sensing and earth observation due to the difficulty in acquiring accurately labeled data in large quantities. Previous studies have shown that meta-learning, which involves episodic training on query and support sets, is a promising approach. However, there has been little attention paid to direct fine-tuning techniques. This paper repurposes contrastive learning as a pre-training method for few-shot learning for classification and semantic segmentation tasks. Specifically, we introduce a generator-based contrastive learning framework (GenCo) that pre-trains backbones and simultaneously explores variants of feature samples. In fine-tuning, the auxiliary generator can be used to enrich limited labeled data samples in feature space. We demonstrate the effectiveness of our method in improving few-shot learning performance on two key remote sensing datasets: Agriculture-Vision and EuroSAT. Empirically, our approach outperforms purely supervised training on the nearly 95,000 images in Agriculture-Vision for both classification and semantic segmentation tasks. Similarly, the proposed few-shot method achieves better results on the land-cover classification task on EuroSAT compared to the results obtained from fully supervised model training on the dataset.",
+    "authors": [
+      "Jing Wu",
+      "Naira Hovakimyan",
+      "Jennifer Hobbs"
+    ],
+    "published": "2023-07-27T03:59:19Z",
+    "pdf_url": "https://arxiv.org/pdf/2307.14612v1",
+    "local_path": "data\\raw_pdfs\\2307.14612v1.pdf"
+  }
+]

@@ -1,0 +1,25 @@
+[
+  {
+    "arxiv_id": "test.0001",
+    "title": "Satellite-Based Crop Classification for Precision Agriculture",
+    "summary": "Abstract\nThis paper presents a deep learning method for crop classification using Sentinel-2 satelli",
+    "authors": [
+      "A. Researcher",
+      "B. Scientist"
+    ],
+    "published": "2025-01-01",
+    "pdf_url": "https://arxiv.org/pdf/test.0001",
+    "local_path": "data/sample/test.0001.pdf"
+  },
+  {
+    "arxiv_id": "test.0002",
+    "title": "UAV-Based Vegetation Index Monitoring for Irrigation Management",
+    "summary": "Abstract\nWe propose a UAV-based system for monitoring NDVI vegetation indices to optimize irrigation",
+    "authors": [
+      "C. Farmer"
+    ],
+    "published": "2025-01-01",
+    "pdf_url": "https://arxiv.org/pdf/test.0002",
+    "local_path": "data/sample/test.0002.pdf"
+  }
+]

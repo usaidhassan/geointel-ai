@@ -1,0 +1,13 @@
+.env
+__pycache__/
+*.pyc
+.venv/
+venv/
+data/raw_pdfs/*.pdf
+data/*.pkl
+data/*.npy
+.pytest_cache/
+*.egg-info/
+postgres_data/
+.DS_Store
+data\raw_pdfs

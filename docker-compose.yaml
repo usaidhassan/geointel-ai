@@ -1,0 +1,68 @@
+services:
+  db:
+    image: pgvector/pgvector:pg16
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-geointel}
+      POSTGRES_USER: ${POSTGRES_USER:-geointel}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-geointel}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-geointel} -d ${POSTGRES_DB:-geointel}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  api:
+    build: .
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      POSTGRES_HOST: db
+      POSTGRES_PORT: 5432
+      POSTGRES_DB: ${POSTGRES_DB:-geointel}
+      POSTGRES_USER: ${POSTGRES_USER:-geointel}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-geointel}
+      AI_GATEWAY_API_KEY: ${AI_GATEWAY_API_KEY}
+      LLM_MODEL: ${LLM_MODEL:-openai/gpt-5.4-mini}
+      EMBEDDING_MODEL: ${EMBEDDING_MODEL:-sentence-transformers/all-MiniLM-L6-v2}
+      EMBEDDING_DIM: ${EMBEDDING_DIM:-384}
+    ports:
+      - "8000:8000"
+
+  # Thin Streamlit chat client, calls `api` over HTTP - see ui/streamlit_app.py
+  chat-ui:
+    build: .
+    restart: unless-stopped
+    depends_on:
+      - api
+    environment:
+      API_URL: http://api:8000
+    ports:
+      - "8501:8501"
+    command: ["streamlit", "run", "ui/streamlit_app.py", "--server.port=8501", "--server.address=0.0.0.0"]
+
+  # Monitoring dashboard - reads directly from Postgres, not through the API
+  dashboard:
+    build: .
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      POSTGRES_HOST: db
+      POSTGRES_PORT: 5432
+      POSTGRES_DB: ${POSTGRES_DB:-geointel}
+      POSTGRES_USER: ${POSTGRES_USER:-geointel}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-geointel}
+    ports:
+      - "8502:8502"
+    command: ["streamlit", "run", "monitoring/dashboard.py", "--server.port=8502", "--server.address=0.0.0.0"]
+
+volumes:
+  postgres_data:

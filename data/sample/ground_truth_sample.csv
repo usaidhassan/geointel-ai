@@ -1,0 +1,7 @@
+question,chunk_id,doc_id
+What accuracy did the crop classification model achieve?,test.0001_003,test.0001
+What kind of neural network architecture was used for crop classification?,test.0001_002,test.0001
+How much did irrigation water usage decrease with UAV-guided NDVI monitoring?,test.0002_003,test.0002
+What sensors were mounted on the UAV for vegetation monitoring?,test.0002_002,test.0002
+Why is precision agriculture increasingly using remote sensing data?,test.0001_001,test.0001
+What problem motivates UAV-based irrigation management research?,test.0002_001,test.0002
