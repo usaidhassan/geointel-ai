@@ -443,8 +443,7 @@ python -m evaluation.evaluate_rag --sample 50
 
 ## Monitoring Dashboard
 
-<!-- ![Monitoring dashboard](docs/screenshots/dashboard.png) -->
-*(Screenshot placeholder — add after the app has logged some real conversations)*
+
 
 6 charts: cost over time, response time over time, token usage, model usage, judge relevance
 distribution, user thumbs up/down.
@@ -452,14 +451,9 @@ distribution, user thumbs up/down.
 ---
 
 ## Screenshots
+docs/screenshots
 
-<!-- ![Architecture](docs/screenshots/architecture.png) -->
-<!-- ![Chat UI](docs/screenshots/chat-ui.png) -->
-<!-- ![Swagger UI](docs/screenshots/swagger.png) -->
-<!-- ![Evaluation results](docs/screenshots/evaluation.png) -->
-
-*(Placeholders — add screenshots of the chat UI, the dashboard, the Swagger docs, and an evaluation
-results table once the app is running against a real corpus.)*
+<!--(docs/screenshots/) -->
 
 ---
 
