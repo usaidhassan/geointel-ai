@@ -485,9 +485,7 @@ docs/screenshots
 
 ---
 
-## License
 
-MIT — see `LICENSE` *(placeholder — add a LICENSE file if you intend to open-source this)*
 
 ## Acknowledgements
 
