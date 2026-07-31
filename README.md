@@ -441,14 +441,7 @@ python -m evaluation.evaluate_rag --sample 50
 
 ---
 
-## Monitoring Dashboard
 
-
-
-6 charts: cost over time, response time over time, token usage, model usage, judge relevance
-distribution, user thumbs up/down.
-
----
 
 ## Screenshots
 docs/screenshots
